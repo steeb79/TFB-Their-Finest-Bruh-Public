@@ -32,6 +32,7 @@
  is3_upgrade_1_tt:0 "Enables §YArmor§! Upgrades for §YIS1§!"
  kv1_upgrade_1_tt:0 "Enables §YArmor§! Upgrades for §YKV-1§!"
  kv1_upgrade_2_tt:0 "Enables Further §YArmor§! Upgrades for §YKV-1§!"
+ kv1_engine_upgrade_1_tt:0 "Enables §YEngine§! Upgrades for §YKV-1§!"
  crusader_upgrade_1_tt:0 "Enables §YArmor§! Upgrades for §YCrusader§!"
  m4_upgrade_1_tt:0 "Enables §YArmor§! Upgrades for §YM4§!"
  m26_upgrade_1_tt:0 "Enables §YArmor§! Upgrades for §YM26§!"
@@ -325,7 +326,6 @@
  tank_heavy_superstructure_desc:0 "Enables §1TD§!'s and §9Assault Gun§!'s"
  tank_heavy_open_superstructure:0 "Heavy Open Superstructure"
  tank_heavy_open_superstructure_desc:0 "Enables §7Artillery§! Armaments\nEnables §RLarge§! §7Artillery§! Armaments\nEnables §0AA§! Armaments\nEnables §RHeavy§! §0AA§! Armaments\nEnables §1TD§!'s"
- heavy_turret_2_tech:0 "Heavy Turret 2"
  #tank_heavy_superstructure_spg:0 "Fixed Heavy Casemate"
  #tank_heavy_superstructure_spg_desc:0 "Fixed Heavy Casemate"
 
@@ -908,7 +908,13 @@
  armored_car_chassis_2_desc:0 "Armored cars are cheaper faster means of recon, they still also have the ability to add additional firepower to a division"
  heavy_tank_chassis_spg:0 "Artillery Tractor Chassis"
  
- # Tank Names
+ # Tank 
+ gen_heavy_turret_1_tech:0 "Heavy Turret Development"
+ gen_heavy_turret_1_tech_desc:0 "Unlocks Heavy Turret 1"
+ gen_heavy_turret_2_tech:0 "Advanced Heavy Turret Development"
+ gen_heavy_turret_2_tech_desc:0 "Unlocks Heavy Turret 2"
+
+
  ger_light_tank_chassis_p1:0 "Panzer 1 Chassis"
  ger_light_tank_chassis_p1_desc:0 "The §RPanzer 1§! Light Tank Can Mount:\n$lgt_1_t_tt$\n$lgt_2_t_tt$\n$all_lgt_spe_tt$"
  ger_light_tank_chassis_p2:0 "Panzer 2 Chassis"
@@ -982,9 +988,10 @@
  sov_medium_tank_5:0 "T-44 Model 46"
  sov_medium_tank_5_desc:0 "Unlocks additional armor for T-44 Medium tank"
  sov_heavy_tank_1:0 "Multi-turreted Chassis"
- sov_heavy_tank_3:0 "KV-1 Model 40"
- sov_heavy_tank_4:0 "KV-1 Model 41"
- sov_heavy_tank_4_desc:0 "Allows additional armor for the KV-1 heavy tank chassis"
+ sov_heavy_tank_3:0 "KV-1S"
+ sov_heavy_tank_3_desc:0 "Allows additional armor for the KV-1 heavy tank chassis"
+ sov_heavy_tank_4:0 "KV-85"
+ sov_heavy_tank_4_desc:0 "Allows for Medium Turret 1"
  sov_heavy_tank_6:0 "IS Model 43"
  sov_heavy_tank_turret:0 "IS 2 Upgrade"
  sov_heavy_tank_turret_desc:0 ""
@@ -1041,6 +1048,8 @@
  eng_heavy_tank_chassis_a33_desc:0 "The §RExcelsior§! Heavy Tank Can Mount:\n$med_modules_for_hev$\n$med_mod_tt$"
  eng_crusader_upgrade:0 "Crusader Mk III"
  eng_crusader_upgrade_desc:0 "Unlocks additional armor upgrades for Crusader Chassis"
+ eng_heavy_tank_turret_1:0 "Heavy Turret Development"
+ eng_heavy_tank_turret_1_desc:0 "Unlocks Heavy Turret 1"
  eng_valentine_upgrade:0 "Valentine Mk VIII"
  can_medium_tank_2:0 "Ram Mk II"
  ast_medium_tank_3:0 "AC4 Cruiser"

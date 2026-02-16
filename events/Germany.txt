@@ -5435,7 +5435,6 @@ country_event = {
 				}
 			}
 		}
-		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_breakthrough_progress = {
@@ -5450,8 +5449,8 @@ country_event = {
 		}
 		add_tech_bonus = {
 			name = hvy_armor_bonus
-			bonus = 0.5
-			ahead_reduction = 0.5
+			bonus = 1
+			ahead_reduction = 1
 			category = cat_heavy_armor
 		}
 	}
@@ -5488,8 +5487,8 @@ country_event = {
 		}
 		add_tech_bonus = {
 			name = hvy_armor_bonus
-			bonus = 0.5
-			ahead_reduction = 0.5
+			bonus = 1
+			ahead_reduction = 1
 			category = cat_heavy_armor
 		}
 		add_breakthrough_progress = {

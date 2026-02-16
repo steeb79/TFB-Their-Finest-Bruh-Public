@@ -1146,6 +1146,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
 	}
 	SpriteType = {
+		name = "GFX_eng_heavy_tank_turret_1"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+	SpriteType = {
 		name = "GFX_eng_valentine_upgrade_medium"
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
 	}
@@ -1618,6 +1622,15 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_medium_tank_3_medium"
 		texturefile = "gfx/interface/technologies/tanks/gen/gen_med3_hull.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gen_heavy_turret_1_tech"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_gen_heavy_turret_2_tech"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
 	
 }
