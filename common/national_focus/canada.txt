@@ -2152,22 +2152,22 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAN_long_branch_arsenal
-			random_owned_controlled_state = {
-				prioritize = { 285 517 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
+			# random_owned_controlled_state = {
+			# 	prioritize = { 285 517 }
+			# 	limit = {
+			# 		free_building_slots = {
+			# 			building = arms_factory
+			# 			size > 2
+			# 			include_locked = yes
+			# 		}
+			# 	}
+			# 	add_extra_state_shared_building_slots = 3
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 3
+			# 		instant_build = yes
+			# 	}
+			# }
 			
 		}
 	}
@@ -2543,9 +2543,78 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAN_the_kangaroo
+		icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = CAN_steel_not_blood }
+		
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CAN_steel_not_blood
+
+		available = {
+			is_in_faction_with = USA
+			USA = {
+				has_war = yes
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = CAN_kangaroo
+		}
+	}
+
+	focus = {
+		id = CAN_the_grizzly
+		icon = GFX_doctrine_tank_warfare
+		prerequisite = { focus = CAN_the_kangaroo }
+		x = 0
+		y = 1
+		relative_position_id = CAN_the_kangaroo 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			USA = {
+				has_tech = usa_medium_tank_3
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = {
+				usa_medium_tank_3 = 1
+			}
+		}
+	}
+
+	focus = {
 		id = CAN_retool_angus_shops
 		icon = GFX_focus_generic_tank_assembly
-		x = 0
+		x = 6
 		y = 1
 		relative_position_id = CAN_steel_not_blood
 
@@ -2693,7 +2762,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_advanced_infantry_tanks
-		icon = GFX_focus_generic_army_tanks2
+		icon = GFX_doctrine_tank_warfare
 		prerequisite = { focus = CAN_the_valentine_tank }
 		
 		cost = 10
@@ -4243,7 +4312,8 @@ focus_tree = {
 					name = CAN_habakkuk_carrier
 					bonus = 1.0
 					uses = 1
-					category = cv_tech
+					technology = basic_ship_hull_carrier
+					technology = improved_ship_hull_carrier
 				}
 			}
 			else = {
