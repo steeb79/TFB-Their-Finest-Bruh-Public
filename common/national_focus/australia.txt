@@ -612,8 +612,12 @@
 
 # 		completion_reward = {
 # 			army_experience = 10
-# 			custom_effect_tooltip = RAJ_jungle_training_effect
-# 			hidden_effect = { set_technology = { jungle_warfare = 1 } }
+# 			custom_effect_tooltip = {
+#                localization_key = generic_enables_tech_tt
+#                TECH_EFFECT = tech_effect|jungle_training_tech
+#                TECH_NAME = jungle_training_tech
+#           }
+# 			hidden_effect = { set_technology = { jungle_training_tech = 1 } }
 # 			add_doctrine_cost_reduction = {
 # 				name = AST_introduce_unconventional_warfare
 # 				cost_reduction = 0.25

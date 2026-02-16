@@ -2493,11 +2493,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = {
                 localization_key = generic_enables_tech_tt
-                TECH_EFFECT = tech_effect|jungle_warfare
-                TECH_NAME = jungle_warfare
+                TECH_EFFECT = tech_effect|jungle_training_tech
+                TECH_NAME = jungle_training_tech
             }
 			hidden_effect = {
-				set_technology = { jungle_warfare = 1 }
+				set_technology = { jungle_training_tech = 1 }
 			}
 		}
 	}

@@ -1197,54 +1197,54 @@ technologies = {
 	# 	}
 	# }
 
-	jungle_warfare = {
+	# jungle_warfare = {
 
-		research_cost = 1
+	# 	research_cost = 1
 
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
+	# 	# only from focus!!! #####
+	# 	allow = {
+	# 		always = no
+	# 	}
 
 
-		#If you change these
-		#Change the custom tooltip too: RAJ_jungle_training_effect
-		marine = {
-			jungle = {
-				attack = 0.05 
-				movement = 0.1
-			}
-		}
+	# 	#If you change these
+	# 	#Change the custom tooltip too: RAJ_jungle_training_effect
+	# 	marine = {
+	# 		jungle = {
+	# 			attack = 0.03
+	# 			movement = 0.05
+	# 		}
+	# 	}
 
-		marine_commando = {
-			jungle = {
-				attack = 0.05 
-				movement = 0.1
-			}
-		}
+	# 	marine_commando = {
+	# 		jungle = {
+	# 			attack = 0.03
+	# 			movement = 0.05
+	# 		}
+	# 	}
 
-		mountaineers = {
-			jungle = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
+	# 	mountaineers = {
+	# 		jungle = {
+	# 			attack = 0.03
+	# 			movement = 0.05
+	# 		}
+	# 	}
 
-		arditi = {
-			jungle = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
+	# 	# arditi = {
+	# 	# 	jungle = {
+	# 	# 		attack = 0.03
+	# 	# 		movement = 0.05
+	# 	# 	}
+	# 	# }
 
-		paratrooper = {
-			jungle = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-
-	}
+	# 	paratrooper = {
+	# 		jungle = {
+	# 			attack = 0.03
+	# 			movement = 0.05
+	# 		}
+	# 	}
+	#
+	# }
 
 	# desert_warfare = { # AST
 	# 	research_cost = 1
@@ -1292,20 +1292,26 @@ technologies = {
 		}
 		marine = {
 			jungle = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		marine_commando = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		mountaineers = {
 			jungle = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		paratrooper = {
 			jungle = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		infantry = {
@@ -1324,20 +1330,26 @@ technologies = {
 		}
 		marine = {
 			desert = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		marine_commando = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		mountaineers = {
 			desert = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		paratrooper = {
 			desert = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		infantry = {
@@ -1356,20 +1368,26 @@ technologies = {
 		}
 		marine = {
 			hills = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		marine_commando = {
+			hills = {
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		mountaineers = {
 			hills = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		paratrooper = {
 			hills = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		infantry = {
@@ -1388,20 +1406,26 @@ technologies = {
 		}
 		marine = {
 			urban = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		marine_commando = {
+			urban = {
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		mountaineers = {
 			urban = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		paratrooper = {
 			urban = {
-				attack = 0.05
-				movement = 0.1
+				attack = 0.03
+				movement = 0.05
 			}
 		}
 		infantry = {
