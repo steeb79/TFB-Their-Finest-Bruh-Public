@@ -343,7 +343,7 @@
   AST_volunteer_defence_corps_tt:0 "Spawns 10 §Y20 width Garrison divisions§! without equipment."
   AST_singapore_strategy_tt:0 "Triggers '§YSingapore Strategy'§! Decision which will activate when Japan goes to war with the Allies. If §YSingapore§! falls in less than §Y150 days§!, §Rlose 15% Stability and War Support.§!\n§YThe Singapore Strategy Spirit will be removed after the decision ends, regardless of outcome.§!"
   #AST_war_council_advisors_tt:0 "Unlocks Robert Menzies and John Curtin as advisors"
-  AST_convert_10_civs_to_mils_tt:0 "Convert §Y10§! civilian factories to military factories."
+  AST_convert_8_civs_to_mils_tt:0 "Convert §Y8§! civilian factories to military factories."
   AST_50pp_remove_tt:0 "§YAdds a decision that can remove this idea for 50 Political Power§!:"
   AST_expand_rubber_production_papua_tt:0 "If has completed §YPerpetual Union with Papua§!:"
   AST_expand_rubber_production_nzl_tt:0 "If has completed §YIncorporate New Zealand into the Federation§!:"
