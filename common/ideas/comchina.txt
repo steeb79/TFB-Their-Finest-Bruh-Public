@@ -426,11 +426,11 @@ ideas = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 
-			targeted_modifier = { 
-				tag = NXM
-				attack_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
-			}
+			# targeted_modifier = { 
+			# 	tag = NXM
+			# 	attack_bonus_against = 0.1
+			# 	breakthrough_bonus_against = 0.1
+			# }
 		}
 
 		PRC_eastern_expedition_idea = {
@@ -442,11 +442,11 @@ ideas = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 
-			targeted_modifier = { 
-				tag = SHX
-				attack_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
-			}
+			# targeted_modifier = { 
+			# 	tag = SHX
+			# 	attack_bonus_against = 0.1
+			# 	breakthrough_bonus_against = 0.1
+			# }
 		}
 
 		PRC_usurp_control_over_yanan_idea = {
@@ -458,11 +458,11 @@ ideas = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 
-			targeted_modifier = { 
-				tag = XIC
-				attack_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
-			}
+			# targeted_modifier = { 
+			# 	tag = XIC
+			# 	attack_bonus_against = 0.1
+			# 	breakthrough_bonus_against = 0.1
+			# }
 		}
 
 		PRC_bolshevik_volunteers = {

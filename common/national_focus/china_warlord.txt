@@ -114,16 +114,16 @@
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 10
-				OR = {
-					original_tag = YUN
-					original_tag = XSM
-					original_tag = GDC
-					original_tag = XIC
-					original_tag = SND
-				}
-			}
+			# modifier = {
+			# 	factor = 10
+			# 	OR = {
+			# 		original_tag = YUN
+			# 		original_tag = XSM
+			# 		original_tag = GDC
+			# 		original_tag = XIC
+			# 		original_tag = SND
+			# 	}
+			# }
 		}
 
 		available = {
