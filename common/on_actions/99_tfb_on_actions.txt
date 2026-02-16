@@ -381,6 +381,33 @@ on_actions = {
     on_startup = {
 		effect = {
 			set_global_flag = game_has_started
+			POL = { # Calculate starting Polish industry
+				set_variable = { POL_num_of_starting_civs = num_of_civilian_factories }
+				set_variable = { POL_num_of_starting_mils = num_of_military_factories }
+				set_variable = { POL_num_of_starting_docs = num_of_naval_factories }
+
+				if = {
+					limit = { # Just let the AI do its thing
+						is_ai = no
+					}
+					every_owned_state = {
+						limit = {
+							OR = {
+								state = 97
+								state = 95
+								state = 784
+								state = 96
+								state = 94
+								state = 93
+								state = 91
+								state = 89
+							}
+						}
+						add_dynamic_modifier = { modifier = POL_cant_build_in_eastern_poland_modifier }
+						set_state_flag = POL_cant_build_in_eastern_poland_flag
+					}
+				}
+			}
 		}
 		# Set all of the flags from GameRules for easier setup:
 		effect = {
@@ -1626,6 +1653,18 @@ on_actions = {
 	# 	}
 	# }
 	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+				}
+				POL = { # Give Poland the factories they're due once capitulated
+					add_offsite_building = { type = industrial_complex level = POL_num_of_war_civs }
+					add_offsite_building = { type = arms_factory level = POL_num_of_war_mils }
+					add_offsite_building = { type = dockyard level = POL_num_of_war_docs }
+				}
+			}
+		}
 		# Denied Czechs Stuff
 		effect = {
 			if = {
@@ -1633,34 +1672,40 @@ on_actions = {
 					original_tag = CZE
 					has_global_flag = DENIED_CZE
 				}
-				GER = {
-					set_technology = { ger_cze_tank_1 = 1 }
-					set_technology = { ger_cze_tank_2 = 1 }
-					create_equipment_variant = {
-						name = "LT-35"
-						type = ger_light_tank_chassis_p35
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_small_gun_1
-							turret_type_slot = tank_light_turret_1
-							suspension_type_slot = tank_bogie_suspension
-							armor_type_slot = tank_riveted_armor
-							engine_type_slot = tank_gasoline_engine
-						}
-						icon = "gfx/interface/technologies/tanks/ger/ger_cze_tank_1.dds"
+				if = {
+					limit = {
+						original_tag = CZE
+						has_global_flag = DENIED_CZE
 					}
-					create_equipment_variant = {
-						name = "PzKpfw 38(t)"
-						type = ger_light_tank_chassis_p38
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_small_gun_2
-							turret_type_slot = tank_light_turret_2
-							suspension_type_slot = tank_bogie_suspension
-							armor_type_slot = tank_riveted_armor
-							engine_type_slot = tank_gasoline_engine
+					GER = {
+						set_technology = { ger_cze_tank_1 = 1 }
+						set_technology = { ger_cze_tank_2 = 1 }
+						create_equipment_variant = {
+							name = "LT-35"
+							type = ger_light_tank_chassis_p35
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_gun_1
+								turret_type_slot = tank_light_turret_1
+								suspension_type_slot = tank_bogie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+							}
+							icon = "gfx/interface/technologies/tanks/ger/ger_cze_tank_1.dds"
 						}
-						icon = "gfx/interface/technologies/tanks/ger/ger_cze_tank_2.dds"
+						create_equipment_variant = {
+							name = "PzKpfw 38(t)"
+							type = ger_light_tank_chassis_p38
+							parent_version = 0
+							modules = {
+								main_armament_slot = tank_small_gun_2
+								turret_type_slot = tank_light_turret_2
+								suspension_type_slot = tank_bogie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+							}
+							icon = "gfx/interface/technologies/tanks/ger/ger_cze_tank_2.dds"
+						}
 					}
 				}
 			}
@@ -2192,6 +2237,47 @@ on_actions = {
 					NOT = { has_completed_focus = ROM_preserve_greater_romania }
 				}
 				complete_national_focus = ROM_national_humiliation
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = { # Calculate how many factories Poland gets on cap & remove eastern construction blocker
+				limit = {
+					ROOT = { original_tag = GER }
+					FROM = { original_tag = POL }
+				}
+				POL = {
+					hidden_effect = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = POL_cant_build_in_eastern_poland_flag
+							}
+							remove_dynamic_modifier = { modifier = POL_cant_build_in_eastern_poland_modifier }
+							clr_state_flag = POL_cant_build_in_eastern_poland_flag
+						}
+
+						# Calculate factories on war dec
+						set_variable = { POL_num_of_war_civs = num_of_civilian_factories }
+						set_variable = { POL_num_of_war_mils = num_of_military_factories }
+						set_variable = { POL_num_of_war_docs = num_of_naval_factories }
+
+						# Subtract the war factories from starting ones to find the difference between starting/built
+						subtract_from_variable = { POL_num_of_war_civs = POL_num_of_starting_civs }
+						subtract_from_variable = { POL_num_of_war_mils = POL_num_of_starting_mils }
+						subtract_from_variable = { POL_num_of_war_docs = POL_num_of_starting_docs }
+
+						# Multiply the starting factories by the precent gained from focuses
+						multiply_variable = { POL_num_of_starting_civs = POL_extra_factories_precent } # Percentage from focuses
+						multiply_variable = { POL_num_of_starting_mils = POL_extra_factories_precent } # Percentage from focuses
+						multiply_variable = { POL_num_of_starting_docs = POL_extra_factories_precent } # Percentage from focuses
+
+						# Add them both together to get the total to be added
+						add_to_variable = { POL_num_of_war_civs = POL_num_of_starting_civs }
+						add_to_variable = { POL_num_of_war_mils = POL_num_of_starting_mils }
+						add_to_variable = { POL_num_of_war_docs = POL_num_of_starting_docs }
+					}
+				}
 			}
 		}
 	}
