@@ -199,11 +199,11 @@ operations = {
 				amount = 400
 				producer = MON
 			}
-			add_equipment_to_stockpile = {
-				type = horse_equipment
-				amount = 2000
-				producer = MON
-			}
+			# add_equipment_to_stockpile = {
+			# 	type = horse_equipment
+			# 	amount = 2000
+			# 	producer = MON
+			# }
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 200

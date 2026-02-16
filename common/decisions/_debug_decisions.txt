@@ -704,7 +704,7 @@ debug_decisions = {
 				add_equipment_to_stockpile = {  type = helicopter_equipment amount = 10000 producer = BUL }	
 				add_equipment_to_stockpile = {  type = train_equipment amount = 10000 producer = BUL }	
 				add_equipment_to_stockpile = {  type = artillery_equipment amount = 10000 producer = BUL }	
-				add_equipment_to_stockpile = {  type = horse_equipment amount = 10000 producer = BUL }	
+				#add_equipment_to_stockpile = {  type = horse_equipment amount = 10000 producer = BUL }	
 				add_equipment_to_stockpile = {  type = anti_tank_equipment amount = 10000 producer = BUL }	
 				add_equipment_to_stockpile = {  type = anti_air_equipment amount = 10000 producer = BUL }	
 				add_equipment_to_stockpile = {  type = cv_fighter_equipment amount = 10000 producer = BUL }	
@@ -873,7 +873,7 @@ debug_decisions = {
 				add_equipment_to_stockpile = {  type = helicopter_equipment amount = 10000 producer = ROM }	
 				add_equipment_to_stockpile = {  type = train_equipment amount = 10000 producer = ROM }	
 				add_equipment_to_stockpile = {  type = artillery_equipment amount = 10000 producer = ROM }	
-				add_equipment_to_stockpile = {  type = horse_equipment amount = 10000 producer = ROM }	
+				#add_equipment_to_stockpile = {  type = horse_equipment amount = 10000 producer = ROM }	
 				add_equipment_to_stockpile = {  type = anti_tank_equipment amount = 10000 producer = ROM }	
 				add_equipment_to_stockpile = {  type = anti_air_equipment amount = 10000 producer = ROM }	
 				add_equipment_to_stockpile = {  type = cv_fighter_equipment amount = 10000 producer = ROM }	

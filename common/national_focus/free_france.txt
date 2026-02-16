@@ -64,10 +64,10 @@
 				type = artillery_equipment
 				amount = 1000
 			}
-			add_equipment_to_stockpile = {
-				type = horse_equipment
-				amount = 2500
-			}
+			# add_equipment_to_stockpile = {
+			# 	type = horse_equipment
+			# 	amount = 2500
+			# }
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 1000

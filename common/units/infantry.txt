@@ -53,7 +53,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 			squad_equipment = 20
-			horse_equipment = 30
+			support_equipment = 5
+			#horse_equipment = 30
 		}
 	}
 
@@ -161,7 +162,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 80
 			squad_equipment = 10
-			horse_equipment = 10
+			#horse_equipment = 10
 		}
 		
 	}
@@ -213,7 +214,7 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 60
-			horse_equipment = 5
+			#horse_equipment = 5
 		}
 	}
 	
@@ -268,7 +269,7 @@ sub_units = {
 			infantry_equipment = 120
 			squad_equipment = 25
 			sf_equipment = 35
-			horse_equipment = 20
+			#horse_equipment = 20
 		}
 
 		essential = {
@@ -357,7 +358,7 @@ sub_units = {
 			infantry_equipment = 120
 			squad_equipment = 25
 			sf_equipment = 35
-			horse_equipment = 20
+			#horse_equipment = 20
 		}
 
 		essential = {
@@ -445,7 +446,7 @@ sub_units = {
 			infantry_equipment = 120
 			squad_equipment = 25
 			sf_equipment = 30
-			horse_equipment = 20
+			#horse_equipment = 20
 		}
 
 		essential = {
@@ -520,7 +521,7 @@ sub_units = {
 			infantry_equipment = 120
 			squad_equipment = 30
 			sf_equipment = 30
-			horse_equipment = 10
+			#horse_equipment = 10
 		}
 
 		essential = {
@@ -941,7 +942,7 @@ sub_units = {
 			infantry_equipment = 150
 			squad_equipment = 25
 			sf_equipment = 30
-			horse_equipment = 20
+			#horse_equipment = 20
 		}
 
 		essential = {

@@ -42,7 +42,7 @@ sub_units = {
 		essential = {
 			infantry_equipment
 			support_equipment
-			horse_equipment
+			#horse_equipment
 		}
 		
 		maximum_speed = 2.0
@@ -50,7 +50,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 40
 			support_equipment = 10
-			horse_equipment = 5
+			#horse_equipment = 5
 		}
 
 		battalion_mult = {
@@ -756,13 +756,13 @@ sub_units = {
 		essential = {
 			infantry_equipment
 			support_equipment
-			horse_equipment
+			#horse_equipment
 		}
 
 		need = {
 			infantry_equipment = 40
 			support_equipment = 10
-			horse_equipment = 10
+			#horse_equipment = 10
 		}
 		
 		forest = {

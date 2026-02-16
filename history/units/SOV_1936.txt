@@ -2253,15 +2253,15 @@ instant_effect = {
 		#industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
 	
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = horse_equipment_0
+	# 		creator = "SOV" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.3
+	# 	efficiency = 50
+	# }
 	
 	add_equipment_production = {
 		equipment = {
@@ -2440,11 +2440,11 @@ instant_effect = {
 		amount = 50
 		producer = SOV
 	}
-	add_equipment_to_stockpile = {
-		type = horse_equipment_0
-		amount = 3000
-		producer = SOV
-	}
+	# add_equipment_to_stockpile = {
+	# 	type = horse_equipment_0
+	# 	amount = 3000
+	# 	producer = SOV
+	# }
 		
 }
 	#####################

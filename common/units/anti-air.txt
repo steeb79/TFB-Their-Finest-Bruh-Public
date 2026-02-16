@@ -31,7 +31,8 @@ sub_units = {
 
 		need = {
 			anti_air_equipment = 20
-			horse_equipment = 20
+			support_equipment = 5
+			#horse_equipment = 20
 		}
 
 		can_be_parachuted = yes
@@ -168,7 +169,8 @@ sub_units = {
 
 		need = {
 			heavy_anti_air_equipment = 20
-			horse_equipment = 35
+			support_equipment = 5
+			#horse_equipment = 35
 		}
 		
 		#Size Definitions

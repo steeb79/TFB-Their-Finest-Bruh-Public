@@ -505,11 +505,11 @@ if = {
 		amount = 5000
 		producer = RAJ
 	}
-	add_equipment_to_stockpile = { 
-		type = horse_equipment #for Garrison aid
-		amount = 1000
-		producer = RAJ
-	}
+	# add_equipment_to_stockpile = { 
+	# 	type = horse_equipment #for Garrison aid
+	# 	amount = 1000
+	# 	producer = RAJ
+	# }
 	add_equipment_to_stockpile = { 
 		type = squad_equipment_0 #for Garrison aid
 		amount = 300

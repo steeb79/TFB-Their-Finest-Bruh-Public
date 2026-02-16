@@ -3965,11 +3965,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -4140,11 +4140,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -4322,11 +4322,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -4586,11 +4586,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -4820,11 +4820,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -5466,11 +5466,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -5774,11 +5774,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -6659,11 +6659,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -6925,11 +6925,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -7193,11 +7193,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -7487,11 +7487,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -7813,11 +7813,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -8623,11 +8623,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -9058,11 +9058,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -10421,11 +10421,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -11266,11 +11266,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -12000,11 +12000,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -12664,11 +12664,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300
@@ -13023,11 +13023,11 @@ GER_reichskommissariats = {
 						amount = 300
 						producer = GER
 					}
-					add_equipment_to_stockpile = { 
-						type = horse_equipment_0
-						amount = 300
-						producer = GER
-					}
+					# add_equipment_to_stockpile = { 
+					# 	type = horse_equipment_0
+					# 	amount = 300
+					# 	producer = GER
+					# }
 					add_equipment_to_stockpile = { 
 						type = support_equipment
 						amount = 300

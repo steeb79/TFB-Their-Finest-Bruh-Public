@@ -1012,15 +1012,15 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = horse_equipment_0
+	# 		creator = "FRA" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.1
+	# 	efficiency = 50
+	# }
 
 	add_equipment_production = {
 		equipment = {
@@ -1077,11 +1077,11 @@ instant_effect = {
 		amount = 400
 		producer = FRA
 	}
-	add_equipment_to_stockpile = {
-		type = horse_equipment_0
-		amount = 2000
-		producer = FRA
-	}
+	# add_equipment_to_stockpile = {
+	# 	type = horse_equipment_0
+	# 	amount = 2000
+	# 	producer = FRA
+	# }
 
 ###################
 }

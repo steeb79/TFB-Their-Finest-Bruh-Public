@@ -4530,11 +4530,11 @@
 					amount = 2000
 					producer = SOV
 				}
-				add_equipment_to_stockpile = {
-					type = horse_equipment
-					amount = 2000
-					producer = SOV
-				}
+				# add_equipment_to_stockpile = {
+				# 	type = horse_equipment
+				# 	amount = 2000
+				# 	producer = SOV
+				# }
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 500

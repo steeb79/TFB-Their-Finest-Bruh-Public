@@ -260,7 +260,7 @@ script_enum_equipment_bonus_type = {
 	infantry_equipment
 	squad_equipment
 	radio_equipment
-	horse_equipment
+	#horse_equipment
 	support_equipment
 	sf_equipment
 	artillery_equipment
@@ -837,7 +837,7 @@ script_enum_equipment_bonus_type = {
 	squad_equipment_1
 	squad_equipment_2
 	squad_equipment_3
-	horse_equipment_0
+	#horse_equipment_0
 	sf_equipment_0
 	radio_equipment_0
 	railway_gun_equipment_2

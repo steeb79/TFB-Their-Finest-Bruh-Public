@@ -755,15 +755,15 @@ instant_effect = {
 		industrial_manufacturer = mio:JAP_osaka_army_arsenal_artillery_organization
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = JAP
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = horse_equipment_0
+	# 		creator = JAP
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.3
+	# 	efficiency = 50
+	# }
 	
 	add_equipment_production = {
 		equipment = {

@@ -28,7 +28,8 @@ sub_units = {
 
 		need = {
 			anti_tank_equipment = 12
-			horse_equipment = 20
+			support_equipment = 5
+			#horse_equipment = 20
 		}
 
 		manpower = 500
@@ -195,7 +196,8 @@ sub_units = {
 		combat_width = 1
 		need = {
 			heavy_anti_tank_equipment = 12
-			horse_equipment = 35
+			support_equipment = 5
+			#horse_equipment = 35
 		}
 		manpower = 500
 		max_organisation = -2

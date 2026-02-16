@@ -121,12 +121,12 @@ amount = 10000
 producer = POR
 }
 
-add_equipment_to_stockpile = {
+# add_equipment_to_stockpile = {
 
-type = horse_equipment_0
-amount = 5000
-producer = POR
-}
+# type = horse_equipment_0
+# amount = 5000
+# producer = POR
+# }
 
 add_equipment_to_stockpile = {
 
