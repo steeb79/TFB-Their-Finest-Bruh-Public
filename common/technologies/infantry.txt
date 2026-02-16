@@ -931,7 +931,6 @@ technologies = {
 
 		ranger_battalion = {
 			max_organisation = 5
-			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = rangers_tech3
