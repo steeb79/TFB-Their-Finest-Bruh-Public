@@ -14329,6 +14329,7 @@ focus_tree = {
                     }
                 }
             }
+            is_subject = no
         }
 
         ai_will_do = {
