@@ -2817,19 +2817,19 @@ country_event = {
 			}
 		}
 	}
-	# no
-	option = {
-		name = JUNO_brazil_events.160.b
-		ai_chance = {
-			base = 1
-		}
-		FROM = {
-			country_event = {
-				id = JUNO_brazil_events.162
-				hours = 1
-			}
-		}		
-	}
+	# # no
+	# option = {
+	# 	name = JUNO_brazil_events.160.b
+	# 	ai_chance = {
+	# 		base = 1
+	# 	}
+	# 	FROM = {
+	# 		country_event = {
+	# 			id = JUNO_brazil_events.162
+	# 			hours = 1
+	# 		}
+	# 	}		
+	# }
 }
 
 country_event = {
