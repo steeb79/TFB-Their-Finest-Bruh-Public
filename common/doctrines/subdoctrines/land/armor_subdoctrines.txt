@@ -42,7 +42,7 @@ armored_spearhead = {
         #2
             category_all_armor = {
                 breakthrough = 0.05
-                speed = 0.05
+                maximum_speed = 0.05
             }
         }
         local_reserves = {
