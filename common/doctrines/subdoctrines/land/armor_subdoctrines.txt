@@ -42,6 +42,7 @@ armored_spearhead = {
         #2
             category_all_armor = {
                 breakthrough = 0.05
+                speed = 0.05
             }
         }
         local_reserves = {
@@ -458,6 +459,10 @@ armored_cavalry = {
 
     }
 
+    light_armor = {
+        max_organisation = 2.5
+        defense = 0.05
+    }
     armored_car = {
         max_organisation = 2.5
         defense = 0.05
@@ -471,7 +476,7 @@ armored_cavalry = {
         cruiser_tanks = {
             light_armor = {
                 maximum_speed = 0.05
-                max_organisation = 2.5
+                max_organisation = 5
                 breakthrough = 0.05
             }
         }
@@ -504,11 +509,11 @@ armored_cavalry = {
         }
         fighting_reconnaissance = {
             armored_car_recon = {
-                max_organisation = 1.5
-                 soft_attack = 0.03
+                max_organisation = 2
+                soft_attack = 0.03
             }
             light_tank_recon = {
-                max_organisation = 1
+                max_organisation = 2
                 soft_attack = 0.03
             }
         }
@@ -520,7 +525,7 @@ armored_cavalry = {
             }
             light_armor = {
                 max_organisation = 2.5
-                soft_attack = 0.03
+                soft_attack = 0.05
                 hard_attack = 0.05
                 default_morale = 0.2
             }
