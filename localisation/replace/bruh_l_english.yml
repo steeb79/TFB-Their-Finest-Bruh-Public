@@ -516,6 +516,7 @@
  recon_tank:0 "Armoured Recon Company"
  medium_tank_recon:0 "Medium Armoured Recon Company"
  category_militia:0 "Milita and Garrisons"
+ category_frontline_infantry:0 "Frontline Leg Infantry"
  category_cavalry:0 "Cavalry"
  category_assault_gun:0 "Assault Guns"
  category_mobile:0 "Motorized/Mechanized/Mobile"
