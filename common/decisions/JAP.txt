@@ -1,7 +1,7 @@
 ###DEBUG STUFF
 
 debug_decisions = {
-	JAP_Danne_debugging = {
+JAP_Danne_debugging = {
 		priority = 999
 		allowed = {
 			always = yes
@@ -2971,10 +2971,9 @@ JAP_colonial_independence = {
 		}
 
 		visible = {
-			OR = {
-				has_completed_focus = JAP_liberate_manchuria
-				has_completed_focus = JAP_democratic_war_with_manchukuo
-			}
+		
+			has_completed_focus = JAP_liberate_manchuria
+			
 			609 = {
 				owner = {
 					OR = {
@@ -7808,7 +7807,7 @@ JAP_imperial_influence_decision_cat = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 365
+		days_mission_timeout = 545
 
 		is_good = no
 
@@ -7869,7 +7868,7 @@ JAP_imperial_influence_decision_cat = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 365
+		days_mission_timeout = 545
 
 		is_good = no
 
@@ -7942,7 +7941,7 @@ JAP_imperial_influence_decision_cat = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 365
+		days_mission_timeout = 545
 
 		is_good = no
 
@@ -14589,6 +14588,12 @@ JAP_investing_in_foreign_industries_cat = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
+				}
+			}
+
+			hidden_effect = {
+				FROM = {
+					set_country_flag = JAP_has_already_attracted_inestments_from_here_flag
 				}
 			}
 

@@ -1263,6 +1263,19 @@ leader_traits = {
 		}
 	}
 
+	SIK_socialist_revolutionary_in_name = {
+		random = no
+		sprite = 13
+
+		neutrality_drift = 0.02
+		political_power_factor = 0.1
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	JAP_modernist_architect = {
 		random = no
 		sprite = 13
@@ -1411,6 +1424,44 @@ leader_traits = {
 
 	}
 
+	KHM_british_connection = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.05
+		army_morale_factor = 0.1
+
+	}
+
+	KHM_daoyin_of_kashgar = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		war_support_factor = 0.05
+
+	}
+
+	KHM_civil_governor_for_life = {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.15
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+
+	}
+
+	KHM_jadidist_emir = {
+		random = no
+		sprite = 13
+
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.1
+
+	}
+
 	KUM_champion_father_of_the_faithful = {
 		random = no
 		sprite = 13
@@ -1420,6 +1471,26 @@ leader_traits = {
 		war_support_factor = 0.1
 		army_attack_factor = 0.1
 		army_defence_factor = 0.1
+
+	}
+
+	KHM_ghazi_trait = {
+		random = no
+		sprite = 13
+
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+
+	}
+
+	CHI_bandit_warlord = {
+		random = no
+		sprite = 13
+
+		equipment_capture_factor = 0.02
+		war_support_factor = 0.05
+		stability_factor = -0.05
+		attrition = -0.05
 
 	}
 
@@ -1552,6 +1623,36 @@ leader_traits = {
 
 		communism_acceptance = -40
 		army_attack_factor = 0.025
+
+	}
+
+	KHM_emir_of_khotan = {
+		random = no
+		sprite = 13
+
+		communism_acceptance = -50
+		army_core_defence_factor = 0.05
+		war_support_factor = 0.05
+
+	}
+
+	CHI_jade_marshal = {
+		random = no
+		sprite = 13
+
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		war_support_factor = 0.05
+
+	}
+
+	CHI_border_garrison_commander = {
+		random = no
+		sprite = 13
+
+		army_core_defence_factor = 0.05
+		conscription_factor = 0.05
+		mobilization_speed = 0.05
 
 	}
 
@@ -3734,6 +3835,7 @@ leader_traits = {
 
 	gentle_scholar = { #abdulmejid
 		random = no
+		sprite = 13
 		stability_factor = 0.15
 		war_support_factor = -0.1
 		political_advisor_cost_factor = -0.25
@@ -3975,6 +4077,18 @@ leader_traits = {
 		conscription = 0.002
 	}
 
+	guerilla_expert = {
+		random = no
+		sprite = 13
+
+
+		resistance_growth_on_our_occupied_states = 0.15
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1
+		resistance_target_on_our_occupied_states = 0.1
+
+		
+	}
+
 	# TURKEY MINISTERS
 
 	prime_minister_inonu = {
@@ -4089,11 +4203,23 @@ leader_traits = {
 
 	prime_minister_atsiz = {
 		random = no
+		sprite = 13
 		war_support_factor = 0.1
 		mobilization_laws_cost_factor = -0.25
 		justify_war_goal_time = -0.33
 		conscription = 0.005
 		fascism_drift = 0.1
+	}
+
+	grey_wolf_trait = {
+		random = no
+		sprite = 13
+
+		war_support_factor = 0.15
+		mobilization_laws_cost_factor = -0.3
+		justify_war_goal_time = -0.5
+		conscription = 0.01
+
 	}
 
 	feminist_ultranationalist = {
@@ -4240,8 +4366,6 @@ leader_traits = {
 	}
 
 	elected_regency_council_pro_axis = { #Regency Council (pro axis)
-		name = elected_regency_council
-
 		random = no
 		political_power_factor = 0.05
 		stability_factor = 0.1
@@ -4250,8 +4374,6 @@ leader_traits = {
 	}
 
 	elected_regency_council_pro_allies = { #Regency Council (pro allies)
-		name = elected_regency_council
-
 		random = no
 		political_power_factor = 0.05
 		stability_factor = 0.1
@@ -4596,6 +4718,7 @@ leader_traits = {
 		political_power_factor = 0.05
 		war_support_factor = 0.05
 	}
+
 	archbishop_of_ethiopian_orthodox_tewahedo_church  = {
 		random = no
 		sprite = 13
@@ -6605,6 +6728,7 @@ leader_traits = {
 	}
 
 	SWE_ardent_conservative = {
+		sprite = 13 
 		political_power_factor = -0.1
 		grant_medal_cost_factor = -0.15
 		dig_in_speed_factor = 0.20
@@ -6700,28 +6824,34 @@ leader_traits = {
 	# Country Leader 
 	ICE_hot_tempered_reformer = {
 		random = no
+		sprite = 13
 		stability_factor = -0.05
 		political_power_factor = 0.1
 		democratic_drift = 0.01
 	}
 	ICE_national_romanticist = {
+		random = no
+		sprite = 13
 		justify_war_goal_time = -0.1
 		drift_defence_factor = 0.25
 	}
 	ICE_revolutionary_educator = {
 		random = no
+		sprite = 13
 		party_popularity_stability_factor = 0.15
 		research_speed_factor = 0.1
 	}
 
 	ICE_the_strict_regent = {
 		random = no
+		sprite = 13
 		political_power_factor = -0.15
 		stability_factor = 0.1
 		industrial_capacity_factory = 0.05
 	}
 	ICE_independence_advocate = {
 		random = no
+		sprite = 13
 		autonomy_gain = 0.1
 		autonomy_gain_global_factor = 0.2
 		party_popularity_stability_factor = 0.15
@@ -6994,6 +7124,7 @@ leader_traits = {
 		production_factory_max_efficiency_factor = 0.05
 		defensive_war_stability_factor = 0.1
 	}
+
 	AFG_liberator_of_persia = {
 		random = no
 		sprite = 13
@@ -7001,12 +7132,14 @@ leader_traits = {
 		conscription_factor = 0.1
 		resistance_damage_to_garrison = -0.1
 	}
+
 	AFG_lord_of_baghdad = {
 		random = no
 		sprite = 13
 		research_speed_factor = 0.05
 		resistance_decay = 0.1
 	}
+
 	AFG_savior_of_the_holy_lands_trait = {
 		random = no
 		sprite = 13
@@ -7238,6 +7371,17 @@ leader_traits = {
 		stability_factor = 0.05
 	}
 
+	IRQ_guardian_of_independence = {
+		random = no
+		sprite = 13
+
+		army_core_defence_factor = 0.1
+		democratic_drift = 0.05
+		stability_factor = 0.05
+		war_support_factor = 0.05
+
+	}
+
 	IRQ_militant_politician = {
 		random = no 
 		sprite = 18
@@ -7328,6 +7472,16 @@ leader_traits = {
 		stability_factor = 0.1
 	}
 
+	IRQ_shiite_representative = {
+		random = no 
+		sprite = 13
+
+		political_power_factor = 0.1
+		stability_factor = 0.1
+		drift_defence_factor = 0.15
+
+	}
+
 	IRQ_the_grand_mufti = {
 		random = no 
 		sprite = 13
@@ -7356,6 +7510,33 @@ leader_traits = {
 
 		fascism_drift = 0.06
 		stability_factor = 0.1
+	}
+
+	KUW_the_military_sheikh = {
+		random = no
+		sprite = 13
+		army_core_defence_factor = 0.15
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
+		conscription = 0.02
+	}
+
+	JOR_emir_of_transjordan = {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.05
+
+	}
+
+	PAL_experienced_high_commissioner = {
+		random = no
+		sprite = 13
+
+		production_speed_infrastructure_factor = 0.1
+		political_power_factor = 0.05
+
 	}
 
 	IRQ_knight_of_arabism = {
@@ -7486,6 +7667,17 @@ leader_traits = {
 		political_power_factor = 0.1
 	}
 
+	IRQ_hashemite_supporter = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.05
+		improve_relations_maintain_cost_factor = -1
+		political_advisor_cost_factor = -0.5
+		political_power_factor = 0.1
+
+	}
+
 	IRQ_poet_of_freedom = {
 		random = no 
 		sprite = 13
@@ -7493,6 +7685,26 @@ leader_traits = {
 		democratic_acceptance = 50
 		war_support_factor = 0.1
 		autonomy_gain = 1
+	}
+
+	YEM_supreme_imam_trait = {
+		random = no 
+		sprite = 13
+		
+		drift_defence_factor = 0.5
+		political_power_factor = 0.05
+		conscription_factor = 0.05
+		war_support_factor = 0.1
+
+	}
+
+	OMA_unifier_of_muscat_and_oman = {
+		random = no 
+		sprite = 13
+		
+		production_speed_buildings_factor = 0.05
+		political_power_factor = 0.05
+
 	}
 
 	########################
@@ -10323,6 +10535,18 @@ leader_traits = {
 		}
 	}
 
+	SAU_unifier_of_central_arabia = {
+		random = no
+		sprite = 13
+		
+		justify_war_goal_time = -0.25
+		war_support_factor = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	pan_africanist_socialist = {
 		random = no
 		sprite = 13
@@ -12101,6 +12325,20 @@ leader_traits = {
 		}
 	}
 
+	desert_motor_transport_company = {
+		random = no
+		
+		supply_combat_penalties_on_core_factor = -0.15
+		supply_node_range = 0.15
+		supply_consumption_factor = -0.05
+
+		equipment_bonus = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	improved_railway_company = {
 		random = no
 		production_speed_rail_way_factor = 0.25
@@ -12220,6 +12458,28 @@ leader_traits = {
 		}
 	}
 
+	electricity_focused_state_bank = {
+		random = no
+
+		factory_energy_consumption = -0.1
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	industrial_investment_bank = {
+		random = no
+
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	telephone_company = {
 		random = no
 		land_reinforce_rate = 0.02
@@ -12229,16 +12489,7 @@ leader_traits = {
 		}
 	}
 
-	mining_company = {
-		random = no
 
-		local_resources_factor = 0.075
-		production_lack_of_resource_penalty_factor = -0.15
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	national_news_agency = {
 		random = no
@@ -12285,6 +12536,17 @@ leader_traits = {
 		production_speed_arms_factory_factor = 0.05
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mining_company = {
+		random = no
+
+		local_resources_factor = 0.075
+		production_lack_of_resource_penalty_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -12395,7 +12657,9 @@ leader_traits = {
 
 	inventive_genius = {
 		random = no
+		sprite = 10 
 
+		custom_modifier_tooltip = TUR_inventive_genius_electronics_modifier_tt
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.05
 
@@ -12490,7 +12754,7 @@ leader_traits = {
 		random = no
 		sprite = 10 
 
-		production_speed_dockyard_factor = 0.17
+		production_speed_dockyard_factor = 0.15
 	}
 
 	NOR_stern_communist = {
@@ -12892,7 +13156,9 @@ leader_traits = {
 
 	inventive_genius = {
 		random = no
+		sprite = 10 
 
+		custom_modifier_tooltip = TUR_inventive_genius_electronics_modifier_tt
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.05
 
@@ -18055,6 +18321,8 @@ leader_traits = {
 		}
 	}
 
+
+
 	##### Philippines SEA DLC
 
 	## Character Traits 
@@ -18777,4 +19045,5 @@ leader_traits = {
 			}
 		}
 	}
+
 }

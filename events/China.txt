@@ -43,6 +43,7 @@ country_event = {
   				# }
 			}
 		}
+
 		hidden_effect = {
 			JAP = { country_event = { id = japan.1 } }
 		}

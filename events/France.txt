@@ -509,6 +509,7 @@ country_event = {
 						promote_leader = yes
 					}
 				}
+				transfer_advisors_to_vichy = yes
 				set_variable = { FRA.FRA_naval_keep = 0.85}
 				set_variable = { FRA.FRA_air_keep = 1}
 				set_variable = { FRA.FRA_army_keep = 1}
@@ -565,7 +566,6 @@ country_event = {
 				add_dynamic_modifier = { modifier = dockyard_cg_mod }
 				add_ideas = FRA_occupation_costs_4
 				load_focus_tree = vichy_french_focus
-
 				FRA = {
 					transfer_units_fraction = {
 						target = event_target:vichy_france

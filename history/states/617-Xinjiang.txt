@@ -25,11 +25,14 @@ state={
 			4682 1 # Aksu
 		}
 
+		victory_points = {
+			12601 1 # Yining
+		}
+
 		1936.1.2 = {
 			owner = SOV
 			add_core_of = SOV
 		}
-
 	}
 
 	provinces={

@@ -3829,11 +3829,11 @@ focus_tree = {
 	focus = {
 		id = IRQ_develop_the_kuwaiti_port
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		prerequisite = { focus = IRQ_basra_military_port_focus }
+		prerequisite = { focus = IRQ_create_repair_yards }
 		#mutually_exclusive = { focus = }
 		x = 0
 		y = 1
-		relative_position_id = IRQ_basra_military_port_focus
+		relative_position_id = IRQ_create_repair_yards
 
 		cost = 10
 
@@ -3922,71 +3922,6 @@ focus_tree = {
 
 
 	### Hashemite/Golden Square Branches ###
-
-	focus = {
-		id = IRQ_ensure_sunni_dominance 
-		icon = GFX_focus_IRQ_arab_dominance
-		#prerequisite = { focus = }
-		mutually_exclusive = { focus = IRQ_promote_kurdish_culture }
-		x = 34
-		y = 0
-		#relative_position_id = IRQ_ensure_sunni_dominance
-
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = IRQ_promote_kurdish_culture
-				}
-			}
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			base = 1
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		search_filters = { FOCUS_FILTER_STABILITY }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}	
-
-			add_stability = 0.1
-			
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				mark_focus_tree_layout_dirty = yes 
-			}
-		}
-	}
 
 	focus = {
 		id = IRQ_rally_behind_the_hashemite_dynasty

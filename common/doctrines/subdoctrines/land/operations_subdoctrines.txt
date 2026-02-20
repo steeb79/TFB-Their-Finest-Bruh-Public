@@ -154,7 +154,7 @@ infiltration_tactics = {
     }
 
     # EFFECTS
-    enable_tactic = tactic_infantry_assault
+    enable_tactic = tactic_infantry_charge
     max_planning = 0.05 
 
     ai_will_do = { }

@@ -41,6 +41,7 @@ country_event = {
 				give_resource_rights = {
 					receiver = ROOT
 					state = 267
+					resources = { oil }
 				}
 			}
 		}
@@ -91,6 +92,7 @@ country_event = {
 		give_resource_rights = {
 			receiver = FROM
 			state = 267
+			resources = { oil }
 		}
 		FROM = {
 			set_country_flag = made_oil_deal_with_afg_flag
@@ -1229,7 +1231,12 @@ country_event = {
 				factor = 0 
 				OR = {
 					has_war_with = FROM
-					is_subject = yes
+					AND = {
+						is_subject = yes
+						NOT = {
+							is_subject_of = FROM
+						}
+					}
 				}
 			}
 			modifier = {
@@ -1258,6 +1265,10 @@ country_event = {
 		name = AFG_political_events.10.b
 		ai_chance = {
 			base = 5
+			modifier = {
+				factor = 0 
+				is_subject_of = FROM
+			}
 		}
 		FROM = {
 			country_event = {
@@ -1286,7 +1297,21 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		puppet = FROM
+		IF = {
+			limit = {
+				FROM = {
+					is_subject = no
+				}
+			}
+			puppet = FROM
+		}
+		ELSE = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}	
+		}
+		
 	}	
 }
 
@@ -3035,7 +3060,10 @@ country_event = {
 			name = AFG_national_revolutionary_party
 			long_name = AFG_national_revolutionary_party_long
 		}
-		AFG_mohammed_daoud_khan = { set_nationality = AFG }
+		hidden_effect = {
+			AFG_mohammed_daoud_khan = { set_nationality = ROOT }
+		}
+		
 		add_country_leader_role = {
 		    character = AFG_mohammed_daoud_khan
 		    promote_leader = yes
@@ -3058,7 +3086,10 @@ country_event = {
 			name = AFG_wesh_zalmian
 			long_name = AFG_wesh_zalmian_long
 		}
-		AFG_shah_mahmud_khan = { set_nationality = AFG }
+		hidden_effect = {
+			AFG_shah_mahmud_khan = { set_nationality = ROOT }
+		}
+		
 		add_country_leader_role = {
 		    character = AFG_shah_mahmud_khan
 		    promote_leader = yes
@@ -3081,7 +3112,10 @@ country_event = {
 			name = AFG_hazara_party
 			long_name = AFG_hazara_party_long
 		}
-		AFG_muhammad_ibrahim_khan = { set_nationality = AFG }
+		hidden_effect = {
+			AFG_muhammad_ibrahim_khan = { set_nationality = ROOT }
+		}
+		
 		add_country_leader_role = {
 		    character = AFG_muhammad_ibrahim_khan
 		    promote_leader = yes
@@ -3673,7 +3707,79 @@ country_event = {
 }
 
 
+# Royal Succession Election Event
+country_event = {
+	id = AFG_political_events.173
+	title = AFG_political_events.173.t
+	desc = AFG_political_events.173.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
+	# Continuity - Sardar Shah Mahmud Khan
+	option = {
+		name = AFG_political_events.173.a
+		ai_chance = {
+			base = 7
+		}
+		
+		hidden_effect = {
+			AFG_shah_mahmud_khan = { set_nationality = ROOT }
+		}
+		
+		add_country_leader_role = {
+		    character = AFG_shah_mahmud_khan
+		    promote_leader = yes
+		    country_leader = {
+				ideology = oligarchism
+				expire = "1965.1.1.1"
+				id = -1
+				traits = { AFG_continuity_pm }
+		    }
+		}
+	}	
+	# Military - Sardar Shah Wali Khan 
+	option = {
+		name = AFG_political_events.173.b
+		ai_chance = {
+			base = 2
+		}
 
+		add_country_leader_role = {
+		    character = AFG_sardar_shah_wali_khan
+		    promote_leader = yes
+		    country_leader = {
+				ideology = oligarchism
+				expire = "1965.1.1.1"
+				id = -1
+				traits = { JAP_military_prime_minister }
+		    }
+		}
+		
+	}
+	# Youth - Daod
+	option = {
+		name = AFG_political_events.173.c
+		ai_chance = {
+			base = 1
+		}
+		
+		hidden_effect = {
+			AFG_mohammed_daoud_khan = { set_nationality = ROOT }
+		}
+		
+		add_country_leader_role = {
+		    character = AFG_mohammed_daoud_khan
+		    promote_leader = yes
+		    country_leader = {
+				ideology = oligarchism
+				expire = "1965.1.1.1"
+				id = -1
+				traits = { AFG_red_prince }
+		    }
+		}
+
+	}
+}
 
 
 

@@ -582,23 +582,6 @@ every_possible_country = { #BEL has no chief of navy, nor any naval theorists
 	}
 }
 
-every_possible_country = { #IRQ has no chief of navy
-	limit = {
-		original_tag = IRQ
-	}
-	generate_character = {
-		token_base = navy_chief_reform # token will be TAG_token_base
-		advisor = {
-			slot = navy_chief
-			traits = { navy_chief_reform_1 }
-			cost = 50
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_navy_arab_3 }
-		}
-	}
-}
-
 every_possible_country = { #AFG has no chief of navy, nor any naval theorists
 	limit = {
 		original_tag = AFG
@@ -749,6 +732,36 @@ every_possible_country = { #AFG has no chief of navy, nor any naval theorists
 		}
 		portraits = { 
 			army = { small = GFX_portrait_AFG_generic_land_2_small }
+		}
+	}
+
+	every_possible_country = { #PHI has no air / army theorists.
+		limit = {
+			original_tag = PHI
+		}
+		generate_character = {
+			token_base = generic_air_warfare_theorist # token will be TAG_token_base
+			advisor = {
+				slot = theorist
+				traits = { air_warfare_theorist }
+				ledger = air
+				cost = 50
+			}
+			portraits = { 
+				army = { small = GFX_idea_generic_air_warfare_theorist }
+			}
+		}
+		generate_character = {
+			token_base = generic_military_theorist # token will be TAG_token_base
+			advisor = {
+				slot = theorist
+				traits = { military_theorist }
+				ledger = army
+				cost = 50
+			}
+			portraits = { 
+				army = { small = GFX_idea_generic_military_theorist }
+			}
 		}
 	}
 }

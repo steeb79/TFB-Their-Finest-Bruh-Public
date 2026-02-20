@@ -52,7 +52,7 @@ country_event = {
 				}
 				FROM = {
 					set_rule = { can_create_factions = yes }
-					create_faction = PRC_government_of_national_defense
+					create_faction_from_template = faction_template_government_of_national_defense
 				}
 			}
 			else_if = {
@@ -255,25 +255,19 @@ country_event = {
 				add = 50
 			}
 		}
-		if = {
+		every_controlled_state = {
 			limit = {
-				controls_state = 527
+				is_korean_state = yes
 			}
-			KOR = { transfer_state = 527 }
+			transfer_state_to = KOR
 		}
-		if = {
-			limit = {
-				controls_state = 525
-			}
-			KOR = { transfer_state = 525 }
-		}
-		if = {
+		IF = {
 			limit = {
 				MAN = {
 					is_subject_of = JAP
 				}
 			}
-			if = {
+			IF = {
 				limit = {
 					controls_state = 609
 				}
@@ -281,7 +275,7 @@ country_event = {
 					transfer_state = 609
 				}
 			}
-			if = {
+			IF = {
 				limit = {
 					controls_state = 745
 				}
@@ -291,13 +285,13 @@ country_event = {
 			}
 			set_autonomy = { target = MAN autonomy_state = autonomy_free }
 		}
-		else_if = {
+		ELSE_IF = {
 			limit = {
 				not = {
 					has_war_with = event_target:WTT_current_china_leader
 				}
 			}			
-			if = {
+			IF = {
 				limit = {
 					controls_state = 609
 				}
@@ -305,7 +299,7 @@ country_event = {
 					transfer_state = 609
 				}
 			}
-			if = {
+			IF = {
 				limit = {
 					controls_state = 745
 				}
@@ -594,14 +588,14 @@ country_event = {
 	}
 }
 
-# Hidden event to 'age' Franco after 1950
+# Hidden event to 'age' Mao after 1950
 country_event = {
 	id = wtt_prc.33
 
 	trigger = {
 		tag = PRC
 		has_country_leader = {
-		    name = "Mao Zedong"
+		    character = PRC_mao_zedong
 		    ruling_only = yes
 		}
 		date > 1950.1.1
@@ -617,15 +611,11 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			retire_country_leader = yes
-			create_country_leader = {
-				name = "Mao Zedong"
-				desc = "POLITICS_MAO_ZEDONG_DESC"
-				picture = GFX_portrait_prc_mao_zedong
-				expire = "1965.1.1"
-				ideology = marxism
-				traits = {
-					
+			PRC_mao_zedong = {
+				set_portraits = {
+					civilian = {
+						large = GFX_Portrait_China_Mao_Zedong
+					}
 				}
 			}
 		}
@@ -754,7 +744,15 @@ country_event = {
 			
 			hidden_effect = {
 				PRC_soviet_tribute_level_up = yes
-				load_focus_tree = china_communist_focus 
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+					load_focus_tree = china_communist_warlord_focus
+				} 
+				ELSE = {
+					load_focus_tree = china_communist_focus
+				}
 			}
 		}
 	}
@@ -949,7 +947,10 @@ country_event = {
 			}
 			event_target:WTT_communist_china = {
 				set_rule = { can_create_factions = yes }
-				create_faction = CHI_the_peoples_front
+				create_faction_from_template = {
+					template = faction_template_POR_popular_front_bloc
+					name = CHI_the_peoples_front
+				}
 				add_to_faction = PREV
 			}
 			add_ai_strategy = {
@@ -1087,7 +1088,7 @@ country_event = {
 			base = 10
 		}
 		FROM = {
-			country_event = { id = wtt_warlord_vs_prc.3 }
+			country_event = { id = wtt_warlord_vs_prc.33 }
 		}
 		PRC_soviet_tribute_clear_all = yes
 	}

@@ -4401,7 +4401,7 @@ country_event = {
 			limit =  {
 				OR = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -4514,7 +4514,7 @@ country_event = {
 			limit =  {
 				NOT = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -4655,7 +4655,7 @@ country_event = {
 			limit =  {
 				OR = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -4768,7 +4768,7 @@ country_event = {
 			limit =  {
 				NOT = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -4911,7 +4911,7 @@ country_event = {
 			limit =  {
 				OR = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -5024,7 +5024,7 @@ country_event = {
 			limit =  {
 				NOT = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -5161,7 +5161,7 @@ country_event = {
 			limit =  {
 				OR = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -5274,7 +5274,7 @@ country_event = {
 			limit =  {
 				NOT = {
 					any_war_score < 39
-					has_stability < 60
+					has_stability < 0.6
 				}
 			}
 			start_civil_war = {
@@ -5435,6 +5435,7 @@ country_event = {
 				}
 			}
 		}
+		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_breakthrough_progress = {

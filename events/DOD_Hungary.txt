@@ -475,6 +475,12 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
+				has_country_leader = {
+					character = SWE_per_albin_hansson 
+				}
+				factor = 0.05
+			}
+			modifier = {
 				HUN = {
 					has_war_with = DEN
 				}
@@ -3579,7 +3585,7 @@ country_event = {
 	option = {# back down
 		name = DOD_hungary.92.a
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				has_war = yes
 				factor = 2
@@ -3591,7 +3597,7 @@ country_event = {
 	option = {# ask Germany for help
 		name = DOD_hungary.92.b
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				is_in_faction_with = GER
 				factor = 5
@@ -3640,7 +3646,7 @@ country_event = {
 		}
 		name = DOD_hungary.92.c
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				is_in_faction_with = ITA
 				factor = 5
@@ -3658,7 +3664,7 @@ country_event = {
 	option = {# ask both for help
 		name = DOD_hungary.92.d
 		ai_chance = {
-			factor = 170
+			base = 170
 		}
 		trigger = {
 			AND = {
@@ -3672,7 +3678,7 @@ country_event = {
 	option = {# Go alone
 		name = DOD_hungary.92.e
 		ai_chance = {
-			factor = 0
+			base = 0
 			modifier = {
 				add = 10
 				AND = {

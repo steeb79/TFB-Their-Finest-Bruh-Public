@@ -256,6 +256,8 @@ form_arabia_category = {
 			original_tag = FSA
 			# Imamate of Oman
 			original_tag = IMO
+			# Rif 
+			#original_tag = RIF
 		}
 		has_dlc = "Waking the Tiger"
 	}
@@ -678,12 +680,14 @@ raj_formable_cat = {
 	#picture = GFX_decision_cat_picture_neo_assyrian_empire
 	
 	allowed = {
-		original_tag = RAJ 
+		original_tag = RAJ # India 
 	}
 }
 
 neo_mesopotamia_category = {
 	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_neo_assyrian_empire
 
 	allowed = {
 		OR = {
@@ -705,7 +709,7 @@ form_maphilindo_category = {
 	picture = GFX_decision_cat_picture_form_maphilindo
 
 	allowed = {
-		original_tag = PHI
+		original_tag = PHI # Philippines 
 		has_dlc = "No Compromise, No Surrender"
 	}
 }

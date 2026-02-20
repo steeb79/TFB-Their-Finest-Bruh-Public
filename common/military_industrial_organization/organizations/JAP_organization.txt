@@ -2890,13 +2890,11 @@ JAP_tokyo_automobile_industries_organization = {
 	
 	allowed = {	
 		OR = {
-			AND = {
-				original_tag = JAP
-				has_dlc = "La Resistance"
-			}
+			original_tag = JAP
 			PHI_SEA = yes
 			original_tag = MAN
 		}
+		has_dlc = "La Resistance"
 		has_dlc = "Arms Against Tyranny"
 	}
 	
@@ -3151,7 +3149,6 @@ JAP_hitachi_arms_department_organization = {
 		}
 		
 		has_dlc = "Arms Against Tyranny"
-		
 	}
 	
 	available = {

@@ -907,13 +907,6 @@ form_gran_colombia_category = {
 		}
 
 		visible = {
-			OR = {
-				# original_tag = PAN
-				# original_tag = ECU
-				# original_tag = COL
-				original_tag = VEN
-				# original_tag = PRU
-			}
 			NOT = { has_global_flag = form_gran_colombia_flag }
 		}
 
@@ -1716,6 +1709,9 @@ form_baltic_federation_category = {
 				original_tag = LIT
 			}
 			NOT = { has_global_flag = form_baltic_federation_flag }
+			NOT = { has_cosmetic_tag = LIVONIA }
+			NOT = { has_completed_focus = LIT_claim_livonia_monarchy }
+			NOT = { has_completed_focus = LIT_POL_union }
 		}
 
 		complete_effect = {
@@ -6155,6 +6151,8 @@ form_arabia_category = {
 				original_tag = FSA
 				# Imamate of Oman
 				original_tag = IMO
+				# Rif
+				#original_tag = RIF
 			}
 			NOT = { has_global_flag = form_arabia_flag }
 		}
@@ -6389,6 +6387,9 @@ form_arabia_category = {
 				state = 551
 				state = 883
 				state = 767
+				state = 886
+				state = 549
+				state = 887
 			}
 		}
 
@@ -6412,6 +6413,9 @@ form_arabia_category = {
 			controls_state = 453
 			controls_state = 551
 			controls_state = 883
+			controls_state = 886
+			controls_state = 549
+			controls_state = 887
 
 		}
 
@@ -6428,6 +6432,9 @@ form_arabia_category = {
 			551 = { add_core_of = ROOT } # Kharthoum
 			883 = { add_core_of = ROOT } # Kassala
 			767 = { add_core_of = ROOT } # North Darfur
+			886 = { add_core_of = ROOT } # Blue Nile 
+			549 = { add_core_of = ROOT } # Kurdufan 
+			887 = { add_core_of = ROOT } # South Darfur 
 			
 		}
 
@@ -6886,6 +6893,8 @@ form_maphilindo_category = {
 				state = 628
 				state = 625
 				state = 627
+				state = 1021
+				state = 1022
 				state = 1025
 				state = 1026
 				state = 1027
@@ -6905,12 +6914,14 @@ form_maphilindo_category = {
 				controls_state = 667
 				controls_state = 738
 				controls_state = 669
+				#controls_state = 1022 # Commented out to prevent edge cases as it is impassible terrain
 			}
 			# British Malaya
 			custom_trigger_tooltip = {
 				tooltip = form_majapahit_malaya_required_states_tt
 				controls_state = 336
 				controls_state = 333
+				controls_state = 1021
 				controls_state = 1023
 				controls_state = 1024
 			}
@@ -6933,7 +6944,17 @@ form_maphilindo_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			set_cosmetic_tag = PHI_maphilindo_tag
+
+			IF = {
+				limit = {
+					NOT = {
+						has_cosmetic_tag = PHI_hispanic_empire_tag
+						has_cosmetic_tag = PHI_hispanic_empire_tag_war
+					}
+				}
+				set_cosmetic_tag = PHI_maphilindo_tag
+			}
+			
 			set_global_flag = PHI_maphilindo_flag
 			# Dutch East Indies
 			custom_effect_tooltip = form_country_nei_coring_states_tt
@@ -7005,7 +7026,16 @@ form_maphilindo_category = {
 					}
 				}
 				set_global_flag = PHI_ASEAN_flag
-				set_cosmetic_tag = PHI_asean_tag
+				IF = {
+					limit = {
+						NOT = {
+							has_cosmetic_tag = PHI_hispanic_empire_tag
+							has_cosmetic_tag = PHI_hispanic_empire_tag_war
+						}
+					}
+					set_cosmetic_tag = PHI_asean_tag
+				}
+				
 			}
 			289 = { add_core_of = ROOT }
 			868 = { add_core_of = ROOT }
@@ -7054,7 +7084,15 @@ form_maphilindo_category = {
 					}
 				}
 				set_global_flag = PHI_ASEAN_flag
-				set_cosmetic_tag = PHI_asean_tag
+				IF = {
+					limit = {
+						NOT = {
+							has_cosmetic_tag = PHI_hispanic_empire_tag
+							has_cosmetic_tag = PHI_hispanic_empire_tag_war
+						}
+					}
+					set_cosmetic_tag = PHI_asean_tag
+				}
 			}
 			670 = { add_core_of = ROOT }
 			671 = { add_core_of = ROOT }
@@ -7112,7 +7150,15 @@ form_maphilindo_category = {
 					}
 				}
 				set_global_flag = PHI_ASEAN_flag
-				set_cosmetic_tag = PHI_asean_tag
+				IF = {
+					limit = {
+						NOT = {
+							has_cosmetic_tag = PHI_hispanic_empire_tag
+							has_cosmetic_tag = PHI_hispanic_empire_tag_war
+						}
+					}
+					set_cosmetic_tag = PHI_asean_tag
+				}
 			}
 			998 = { add_core_of = ROOT }
 			288 = { add_core_of = ROOT }
@@ -8968,9 +9014,9 @@ form_greater_greece_category = {
 				340 = { add_core_of = ROOT }
 				340 = { set_state_name = "Prousa" }
 				set_province_name = { id = 947 name = "Prousa" } 
-				set_province_name = { id = 947 name = "Palaeokastron" }
+				set_province_name = { id = 9799 name = "Palaeokastron" }
 				341 = { add_core_of = ROOT }
-				341 = { set_state_name = "Thrace" }
+				341 = { set_state_name = "Thracia" }
 				set_province_name = { id = 11842 name = "Adrianople" }
 				797 = { add_core_of = ROOT }
 				797 = { set_state_name = "Constantinople" }
@@ -9410,7 +9456,7 @@ form_macedonian_empire_category = {
 				AND = {
 					has_completed_focus = GRE_protectors_of_the_mediterranean
 					has_country_leader = {
-						name = "George II"
+						character = GRE_king_george_ii
 						ruling_only = yes
 					}
 				}
@@ -9607,6 +9653,7 @@ form_turan_category = {
 				controls_state = 353
 				controls_state = 352
 				controls_state = 800
+				controls_state = 799
 			}
 			# Syria
 			custom_trigger_tooltip = {
@@ -9656,6 +9703,9 @@ form_turan_category = {
 				controls_state = 200
 				controls_state = 196
 				controls_state = 137
+				controls_state = 827
+				controls_state = 828
+				controls_state = 821
 			}
 			# Urals + Central Asia
 			custom_trigger_tooltip = {
@@ -9685,6 +9735,7 @@ form_turan_category = {
 				controls_state = 651
 				controls_state = 249
 				controls_state = 256
+				controls_state = 1007 
 			}
 			# Siberia
 			custom_trigger_tooltip = {
@@ -9710,6 +9761,8 @@ form_turan_category = {
 				controls_state = 637
 				controls_state = 822
 				controls_state = 878
+				controls_state = 575
+				controls_state = 578 
 			}
 		}
 
@@ -9810,6 +9863,9 @@ form_turan_category = {
 				651 = { add_core_of = TUR }
 				249 = { add_core_of = TUR }
 				256 = { add_core_of = TUR }
+				1007 = { add_core_of = TUR }
+				571 = { add_core_of = TUR }
+				570 = { add_core_of = TUR }
 				#SIBERIA
 				654 = { add_core_of = TUR }
 				40 = { add_core_of = TUR }
@@ -9834,9 +9890,67 @@ form_turan_category = {
 				822 = { add_core_of = TUR }
 				875 = { add_core_of = TUR }
 				878 = { add_core_of = TUR }
+				578 = { add_core_of = TUR }
 				set_global_flag = form_turan_flag
 			}
 		}
+
+		priority = 100
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	TUR_appoint_nihal_atziz_as_president = {
+
+		icon = GFX_decision_generic_political_address
+
+		allowed = {
+			original_tag = TUR
+			has_dlc = "Battle for the Bosporus"
+		}
+
+		available = {
+			is_subject = no
+			AND = {
+				has_government = fascism
+				has_completed_focus = TUR_turanist_ambition
+				has_idea = TUR_nihal_atsiz
+			}
+		}
+
+		visible = {
+			has_completed_focus = TUR_turanist_ambition
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			remove_ideas = TUR_nihal_atsiz
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_country_leader_role = {
+				character = TUR_nihal_atsiz
+				country_leader = {
+					expire = "1975.1.1"
+					ideology = gen_nazism
+					traits = {
+						grey_wolf_trait
+					}
+				}
+				promote_leader = yes
+			}
+
+		}
+
+		priority = 95
 
 		ai_will_do = {
 			factor = 200
@@ -15380,7 +15494,6 @@ neo_mesopotamia_category = {
 				}
 			}
 			
-			
 			NOT = { has_global_flag = neo_mesopotamia_formed_flag }
 			
 		}
@@ -15393,70 +15506,70 @@ neo_mesopotamia_category = {
 
 		available = {
 			413 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			421 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			1001 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			676 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			291 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			1011 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			656 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			675 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			1010 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			680 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			677 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			799 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			350 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			344 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
-			183 = {
-				is_fully_controlled_by = ROOT
-			}
+			#183 = {
+			#	is_controlled_by = ROOT
+			#}
 			554 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			553 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			454 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			453 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			446 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			907 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 			447 = {
-				is_fully_controlled_by = ROOT
+				is_controlled_by = ROOT
 			}
 		}
 
@@ -15492,7 +15605,7 @@ neo_mesopotamia_category = {
 				drop_cosmetic_tag = yes
 			}
 
-			set_cosmetic_tag = neo_mesopotamia
+			set_cosmetic_tag = neo_mesopotamia 
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -15561,6 +15674,7 @@ greater_mongolia_category = {
 			controls_state = 616
 			controls_state = 1043 
 			controls_state = 1040 
+			controls_state = 1039  
 
 		}
 
@@ -15588,6 +15702,7 @@ greater_mongolia_category = {
 				state = 616
 				state = 1043 
 				state = 1040 
+				state = 1039 
 			}
 		}
 
@@ -15619,6 +15734,11 @@ greater_mongolia_category = {
 			add_state_core = 616
 			add_state_core = 1043 
 			add_state_core = 1040 
+			add_state_core = 1039 
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_state_core = 237 
 
 			hidden_effect = {
 			
