@@ -27,6 +27,10 @@ state = {
 		victory_points = {
 			1421 2 # Zamboanga
 		}
+
+		1936.1.2 = {
+			owner = USA
+		}
 		
 	}
 

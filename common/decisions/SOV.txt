@@ -352,6 +352,7 @@ foreign_politics = {
 			818 = { set_compliance = 60 }
 			819 = { set_compliance = 60 }
 			820 = { set_compliance = 60 }
+			1042 = { set_compliance = 60 }
 		}
 	}
 

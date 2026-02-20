@@ -19,6 +19,10 @@ state = {
 		victory_points = {
 			10243 1 # Cagayan de Oro
 		}
+
+		1936.1.2 = {
+			owner = USA
+		}
 		
 	}
 
