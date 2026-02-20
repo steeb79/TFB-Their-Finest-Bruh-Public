@@ -404,7 +404,7 @@ ideas = {
 			picture = sov_mech_2
 
 			modifier = {
-				air_superiority_bonus_in_combat = 0.2
+				army_bonus_air_superiority_factor = 0.2
 				coordination_bonus = 0.05
 				org_loss_when_moving = -0.05
 				army_attack_speed_factor = 0.05
@@ -447,7 +447,7 @@ ideas = {
 				motorized_defence_factor = 0.1
 				mechanized_attack_factor = 0.1
 				mechanized_defence_factor = 0.1
-				air_superiority_bonus_in_combat = 0.15
+				army_bonus_air_superiority_factor = 0.15
 			}	
 
 			picture = sov_mech_2
