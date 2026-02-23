@@ -380,6 +380,97 @@ on_actions = {
 	}
     on_startup = {
 		effect = {
+			# Cursed Setup for the MIO Level Swap
+			every_country = {
+				every_military_industrial_organization = {
+					limit = {
+						OR = {
+							has_mio_equipment_type = mio_cat_eq_all_tanks
+							has_mio_equipment_type = mio_cat_eq_all_tank_destroyers
+							has_mio_equipment_type = mio_cat_eq_all_light_tank
+							has_mio_equipment_type = mio_cat_eq_all_medium_tank
+							has_mio_equipment_type = mio_cat_eq_all_heavy_tank
+							has_mio_equipment_type = armor
+							has_mio_equipment_type = armored_car_chassis
+							has_mio_equipment_type = light_assault_gun_chassis 
+							has_mio_equipment_type = medium_assault_gun_chassis 
+							has_mio_equipment_type = heavy_assault_gun_chassis 
+							has_mio_equipment_type = light_tank_artillery_chassis 
+							has_mio_equipment_type = medium_tank_artillery_chassis 
+							has_mio_equipment_type = heavy_tank_artillery_chassis
+
+							has_mio_research_category = cat_armored_cars
+							has_mio_research_category = mio_cat_tech_all_armor_and_modules
+							has_mio_research_category = mio_cat_tech_light_armor_and_modules
+							has_mio_research_category = mio_cat_tech_medium_armor_and_modules
+							has_mio_research_category = mio_cat_tech_heavy_armor_and_modules
+							has_mio_research_category = armor
+						}
+					}
+					set_mio_flag = tank_mio
+				}
+				every_military_industrial_organization = {
+					limit = {
+						OR = {
+							has_mio_equipment_type = mio_cat_eq_all_carrier
+							has_mio_equipment_type = mio_cat_eq_all_cruiser
+							has_mio_equipment_type = mio_cat_eq_all_destroyer
+							has_mio_equipment_type = mio_cat_eq_all_battleship
+							has_mio_equipment_type = ship_hull_submarine
+							has_mio_equipment_type = capital_ship
+							has_mio_equipment_type = screen_ship
+							has_mio_equipment_type = submarine
+
+							has_mio_research_category = mio_cat_tech_all_capital_ship_and_modules
+							has_mio_research_category = mio_cat_tech_all_screen_ship_and_modules
+							has_mio_research_category = mio_cat_tech_all_submarine_and_modules
+							has_mio_research_category = mio_cat_tech_all_carrier_and_modules
+							has_mio_research_category = mio_cat_tech_all_cruiser_and_modules
+							has_mio_research_category = mio_cat_tech_all_destroyer_and_modules
+							has_mio_research_category = naval_equipment
+						}
+					}
+					set_mio_flag = naval_mio
+				}
+				every_military_industrial_organization = {
+					limit = {
+						OR = {
+							has_mio_equipment_type = mio_cat_eq_all_small_plane
+							has_mio_equipment_type = mio_cat_eq_all_medium_plane
+							has_mio_equipment_type = mio_cat_eq_all_large_plane
+							has_mio_equipment_type = mio_cat_eq_all_cv_aircraft
+							has_mio_equipment_type = mio_cat_eq_all_airplanes
+							has_mio_equipment_type = mio_cat_eq_only_light_fighter
+							has_mio_equipment_type = mio_cat_eq_only_light_fighter_no_cv
+							has_mio_equipment_type = mio_cat_eq_only_light_fighter_and_CAS_no_cv
+							has_mio_equipment_type = mio_cat_eq_only_tactical_bomber
+							has_mio_equipment_type = mio_cat_eq_only_strategic_bomber
+							has_mio_equipment_type = mio_cat_all_cas_and_modules
+							has_mio_equipment_type = mio_cat_all_naval_bomber_and_modules
+
+							has_mio_research_category = mio_cat_all_light_fighter_and_modules
+							has_mio_research_category = mio_cat_all_cas_and_modules
+							has_mio_research_category = mio_cat_all_naval_bomber_and_modules
+							has_mio_research_category = mio_cat_all_light_aircraft_and_modules
+							has_mio_research_category = mio_cat_all_medium_aircraft_and_modules
+							has_mio_research_category = mio_cat_all_heavy_aircraft_and_modules
+							has_mio_research_category = air_equipment
+						}
+					}
+					set_mio_flag = air_mio
+				}
+				every_military_industrial_organization = {
+					random_state = {
+						set_variable = { target_MIO@PREV.PREV = PREV }
+						add_to_array = { PREV.PREV.target_MIO_state = THIS }
+					}
+				}
+				set_variable = { var = tank_mio_displayed }
+				add_to_variable = { MIO_Transfer_GUI_dirty_var = 1 }	
+			}
+			
+		}
+		effect = {
 			set_global_flag = game_has_started
 			POL = { # Calculate starting Polish industry
 				set_variable = { POL_num_of_starting_civs = num_of_civilian_factories }
