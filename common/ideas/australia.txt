@@ -913,12 +913,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_trade
-
-			# TODO: Implement trade cost reduction with specific countries
-			# Should reduce trade cost by -25% with: CAN, SAF, NZL, RAJ, ENG
-			# and grant them the same bonus with AST
-			# This may require custom scripted effects
+			picture = can_wartime_prices_and_trade_board
 
 			targeted_modifier = {
 				tag = ENG
@@ -950,7 +945,7 @@ ideas = {
 
 			name = AST_commonwealth_trade_block
 
-			picture = generic_trade
+			picture = can_wartime_prices_and_trade_board
 
 			allowed = {
 				OR = {
@@ -1059,7 +1054,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_trade
+			picture = can_wartime_prices_and_trade_board
 
 			# TODO: Implement trade cost reduction with USA
 			# Should reduce trade cost by -25% with USA (and vice versa)
@@ -1084,7 +1079,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_trade
+			picture = can_wartime_prices_and_trade_board
 
 			# TODO: Implement trade cost reduction with USA
 			# Should reduce trade cost by -25% with USA (and vice versa)
