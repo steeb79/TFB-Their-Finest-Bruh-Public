@@ -9475,7 +9475,7 @@ prospect_for_resources = {
 				factor = 5
 				has_resources_in_country = {
 					resource = coal
-					amount < 1
+					amount < 10
 				}
 			}
 		}
@@ -9484,7 +9484,7 @@ prospect_for_resources = {
 			942 = {
 				add_resource = {
 					type = aluminium
-					amount = 12 
+					amount = 120 
 				}
 			}
 		}
