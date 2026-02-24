@@ -124,6 +124,7 @@
   HUN_reclaim_north:0 "Reclaim Southern Slovakia"
   HUN_reclaim_north_2:0 "Reclaim Carpathian Ruthenia"
   HUN_reclaim_south:0 "Reclaim Vojvodina"
+  HUN_reintigrate_prekmurje:0 "Reintegrate Prekmurje"
 
   #### TOOLTIP ####
   HUN_gombos_dead:0 "Gömbös has died"

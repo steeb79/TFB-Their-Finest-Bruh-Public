@@ -6824,6 +6824,7 @@ focus_tree = {
 						owns_state = 103
 						owns_state = 45
 						owns_state = 764
+						owns_state = 619
 					}
 				}
 				ROOT = {
@@ -9740,6 +9741,7 @@ focus_tree = {
 						state = 764
 						state = 45
 						state = 975
+						state = 1059
 					}
 				}
 				add_claim_by = ROOT
