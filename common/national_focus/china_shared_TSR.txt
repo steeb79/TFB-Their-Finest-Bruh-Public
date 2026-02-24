@@ -48,7 +48,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = -8
+		x = -16
 		y = 0
 		trigger = {
 			tag = MAN 
@@ -96,6 +96,14 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_sea_invite_foreign_investors
 	cost = 5
+
+	offset = {
+		x = 7
+		y = 0
+		trigger = {
+			tag = MAN
+		}
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -1002,22 +1010,22 @@ shared_focus = {
 			category = armor
 		}
 		
-		IF = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = SOV_morozov_design_bureau_organization
+		# IF = {
+		# 	limit = {
+		# 		has_dlc = "Arms Against Tyranny"
+		# 	}
+		# 	custom_effect_tooltip = available_mio_tt
+		# 	show_mio_tooltip = SOV_morozov_design_bureau_organization
 
-			mio:SOV_morozov_design_bureau_organization = {
-				add_mio_size = 1
-				add_mio_funds = 500
-			}
-		}
-		ELSE = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SOV_morozov_design_bureau
-		}
+		# 	mio:SOV_morozov_design_bureau_organization = {
+		# 		add_mio_size = 1
+		# 		add_mio_funds = 500
+		# 	}
+		# }
+		# ELSE = {
+		# 	custom_effect_tooltip = available_designer
+		# 	show_ideas_tooltip = SOV_morozov_design_bureau
+		# }
 	}
 }
 
@@ -1096,6 +1104,10 @@ shared_focus = {
 
 	bypass = {
 		is_in_faction_with = SOV
+	}
+
+	allow_branch = {
+		NOT = { tag = MAN }
 	}
 
 	cancel_if_invalid = no
@@ -1307,6 +1319,10 @@ shared_focus = {
 
 	bypass = {
 		
+	}
+
+	allow_branch = {
+		NOT = { tag = MAN }
 	}
 
 	cancel_if_invalid = no
@@ -1796,6 +1812,14 @@ shared_focus = {
 		modifier = {
 			factor = 4
 			tag = PRC			
+		}
+	}
+
+	offset = {
+		x = -5
+		y = 0
+		trigger = {
+			tag = MAN
 		}
 	}
 
@@ -3130,12 +3154,16 @@ shared_focus = {
 			ENG = { has_government = ROOT }
 			ENG_will_support = yes
 		}
-		not = {
-			has_War_with = ENG
+		NOT = {
+			has_war_with = ENG
 		}
 		ENG = {
 			has_capitulated = no
 		}
+	}
+
+	allow_branch = {
+		NOT = { tag = MAN }
 	}
 
 	bypass = {
@@ -3887,6 +3915,10 @@ shared_focus = {
 
 	}
 
+	allow_branch = {
+		NOT = { tag = MAN }
+	}
+
 	cancel_if_invalid = no
 	continue_if_invalid = yes
 	available_if_capitulated = no
@@ -4142,6 +4174,14 @@ shared_focus = {
 		factor = 1
 	}
 
+	offset = {
+		x = -12
+		y = 0
+		trigger = {
+			tag = MAN
+		}
+	}
+
 	available = {
 		OR = {
 			USA_will_support = yes
@@ -4223,6 +4263,14 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
+	}
+
+	offset = {
+		x = -13
+		y = 0
+		trigger = {
+			tag = MAN
+		}
 	}
 
 	available = {
@@ -4364,6 +4412,14 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
+	}
+
+	offset = {
+		x = -16
+		y = 0
+		trigger = {
+			tag = MAN
+		}
 	}
 
 	available = {
