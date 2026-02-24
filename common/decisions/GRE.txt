@@ -3773,7 +3773,8 @@ GRE_war_decisions = {
 
 		activation = {
 			has_war_with = GER
-			NOT = { has_country_flag = has_been_reinstated }	
+			NOT = { has_country_flag = has_been_reinstated }
+			is_government_in_exile = no		
 		}
 
 		is_good = no
