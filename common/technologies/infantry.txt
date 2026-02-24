@@ -1313,6 +1313,12 @@ technologies = {
 				movement = 0.05
 			}
 		}
+		ranger_battalion = {
+			jungle = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
 		infantry = {
 			jungle = {
 				attack = 0.03
@@ -1346,6 +1352,12 @@ technologies = {
 			}
 		}
 		paratrooper = {
+			desert = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		ranger_battalion = {
 			desert = {
 				attack = 0.03
 				movement = 0.05
@@ -1389,6 +1401,12 @@ technologies = {
 				movement = 0.05
 			}
 		}
+		ranger_battalion = {
+			hills = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
 		infantry = {
 			hills = {
 				attack = 0.03
@@ -1422,6 +1440,12 @@ technologies = {
 			}
 		}
 		paratrooper = {
+			urban = {
+				attack = 0.03
+				movement = 0.05
+			}
+		}
+		ranger_battalion = {
 			urban = {
 				attack = 0.03
 				movement = 0.05
