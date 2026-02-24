@@ -4830,7 +4830,7 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				threat > 0.15
+				threat > 0.10
 				has_war = yes
 			}
 		}
@@ -5902,7 +5902,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_focus_home
 		
-		cost = 5
+		cost = 2
 
 		completion_reward = {
 			unlock_decision_tooltip = ENG_develop_ast

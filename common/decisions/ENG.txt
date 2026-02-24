@@ -2617,7 +2617,7 @@ ENG_develop_the_empire = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.04 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_ast
@@ -2701,7 +2701,7 @@ ENG_develop_the_empire = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.04 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_nzl
@@ -2784,7 +2784,7 @@ ENG_develop_the_empire = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.04 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_can
@@ -2867,7 +2867,7 @@ ENG_develop_the_empire = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.04 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_saf
@@ -2950,7 +2950,7 @@ ENG_develop_the_empire = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.04 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_raj
