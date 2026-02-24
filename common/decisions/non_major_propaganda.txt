@@ -880,7 +880,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			industrial_capacity_dockyard = 0.15
+			industrial_capacity_dockyard = 0.1
 		}
 
 		complete_effect = {

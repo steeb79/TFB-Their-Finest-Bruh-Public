@@ -1706,13 +1706,13 @@ ideas = {
 			picture = generic_central_management
 
 			modifier = {
-				production_factory_start_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.2
 				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor= -0.40
+				conversion_cost_civ_to_mil_factor= -0.50
 				global_building_slots_factor = 0.3
 				production_factory_max_efficiency_factor = 0.20
-				production_speed_synthetic_rubber_refinery_factor = 0.25
-				production_factory_efficiency_gain_factor = 0.25
+				production_speed_synthetic_rubber_refinery_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
 				production_speed_dockyard_factor = 0.30
 				industrial_capacity_factory = 0.1
 			}
