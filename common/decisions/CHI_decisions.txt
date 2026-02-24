@@ -781,7 +781,7 @@ war_measures = {
 	}
 	
 	
-		CHI_wave_1 = {
+	CHI_wave_1 = {
 
 		allowed = {
 			original_tag = CHI
