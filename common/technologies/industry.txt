@@ -230,7 +230,7 @@ technologies = {
 
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
-		energy_gain_factor = 0.15
+		energy_gain_factor = 0.075
 		#equipment_conversion_speed = 0.20
 
 		allow_branch = {
@@ -272,7 +272,7 @@ technologies = {
 	
 	advanced_equipment_conversion = {
 		
-		energy_gain_factor = 0.15
+		energy_gain_factor = 0.075
 		#equipment_conversion_speed = 0.40
 
 		research_cost = 2.5
