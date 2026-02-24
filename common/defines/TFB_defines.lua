@@ -30,6 +30,12 @@ NDefines.NDiplomacy.PEACE_SCORE_DISTRIBUTION = { 3.0, 3.0, 3.0, 3.0, 3.0 } -- Ho
 NDefines.NDiplomacy.PEACE_ACTION_MAX_COST = 500					-- Max value for a peace action cost (after all modifiers)
 NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE	= 300			-- extra bonus when deciding who to capitulate to (applied to capital holder)
 NDefines.NDiplomacy.VICTORY_POINT_WORTH_FACTOR_WARSCORE = 0.5		-- multiplier for each victory points when calculating province worth for warscore
+NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = 35						-- Target-generated threat threshold to allow embargo (affected by modifiers)
+NDefines.NDiplomacy.EMBARGO_DIFFERENT_IDEOLOGY_AI_WEIGHT = 5			-- AI weight for different ideology
+NDefines.NDiplomacy.EMBARGO_NEIGHBOUR_AI_WEIGHT = -25					-- AI weight for different ideology
+-- NDefines.NDiplomacy.NAVAL_BLOCKADE_BASE_COST = 150						-- Base PP cost for issuing a naval blockade
+-- NDefines.NDiplomacy.NAVAL_BLOCKADE_DAILY_COST = 0.25					-- Daily PP cost for one naval blockade
+-- NDefines.NDiplomacy.NAVAL_BLOCKADE_THREAT_THRESHOLD = 20				-- Target-generated threat threshold to allow naval blockade
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 40						-- Events are checked every X day per country or state (1 is ideal but CPU heavy)
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 4						-- Base number of research slots per country.
@@ -710,6 +716,8 @@ NDefines.NAI.MAX_INVASION_FRONT_SCORE = 2000							-- max score for naval invasi
 NDefines.NAI.NAVAL_INVADED_AREA_PRIO_MULT = 2.0									-- fronts that belongs to recent invasions gets more prio
 NDefines.NAI.MIN_NUM_CONQUERED_PROVINCES_TO_DEPRIO_NAVAL_INVADED_FRONTS = 30	-- if you conquer this amount of provinces after a naval invasion it will lose its prio status and will act as a regular front
 NDefines.NAI.MIN_INVASION_PLAN_VALUE_TO_EXECUTE = 0.2				-- ai will only activate invasions if it is above this
+NDefines.NAI.NUM_RESOURCES_TO_ALLOW_MINOR_EMBARGO = 499		--If we or any of our puppets have more total resources of a single category that this, we will consider embargoing countries
+NDefines.NAI.EMBARGO_WORLD_TENSION_THREAT_DIVISOR = 3		--A divisor to generated world tension when applying how much we care about it in AI desire
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 21				-- This much progress can be saved while not having a focus selected
 
