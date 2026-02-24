@@ -894,6 +894,13 @@ ideas = {
 					date > 1941.6.1
 				}
 
+				modifier = {
+					factor = 400
+					original_tag = SIA
+					date > 1937.6.1
+				}
+
+
 				# Oil for hitlers oil throne!
 				modifier = {
 					factor = 600
