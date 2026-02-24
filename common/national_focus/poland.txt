@@ -50,8 +50,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
 		}
 	}
@@ -192,9 +192,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_civs = 2 }
 		}
 	}
 
@@ -289,9 +290,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_mils = 2 }
 		}
 	}
 
@@ -364,9 +366,11 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_civs = 1 }
+			add_to_variable = { POL_num_of_starting_mils = 1 }
 		}
 
 	}
@@ -455,9 +459,11 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_civs = 2 }
+			add_to_variable = { POL_num_of_starting_mils = 1 }
 		}
 	}
 
@@ -505,8 +511,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
 		}
 	}
@@ -805,9 +811,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_civs = 2 }
 		}
 	}
 
@@ -996,9 +1003,11 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_civs = 6 }
+			add_to_variable = { POL_num_of_starting_mils = 2 }
 		}
 	}
 
@@ -1060,9 +1069,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_mils = 1 }
 		}
 	}
 
@@ -1186,9 +1196,11 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_variable = {
 				var = POL_extra_factories_precent
-				value = 0.05
-				tooltip = POL_5_precent_more_industry_tt
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
 			}
+			add_to_variable = { POL_num_of_starting_civs = 2 }
+			add_to_variable = { POL_num_of_starting_mils = 2 }
 		}
 	}
 
@@ -5842,8 +5854,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 }
-			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = arms_factory level = 5 }
 		}
 	}
 
@@ -5868,7 +5880,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 5 }
-			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = arms_factory level = 5 }
 		}
 	}
 
@@ -5893,7 +5905,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 5 }
-			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = arms_factory level = 5 }
 		}
 	}
 
@@ -5918,7 +5930,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 5 }
-			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = arms_factory level = 5 }
 		}
 	}
 
@@ -5943,7 +5955,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 5 }
-			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = arms_factory level = 5 }
 		}
 	}
 
@@ -6310,6 +6322,12 @@ focus_tree = {
 				}
 				set_state_flag = POL_develop_polish_ship_building_1
 			}
+			add_to_variable = { POL_num_of_starting_docs = 4 }
+			add_to_variable = {
+				var = POL_extra_factories_precent
+				value = 0.02
+				tooltip = POL_2_precent_more_industry_tt
+			}
 			#Add 4 Dockyards at Gdynia			
 		}
 	}
@@ -6432,6 +6450,12 @@ focus_tree = {
 			add_victory_points = {
 			  province = 9263
 			  value = 0.5
+			}
+			add_to_variable = { POL_num_of_starting_docs = 2 }
+			add_to_variable = {
+				var = POL_extra_factories_precent
+				value = 0.03
+				tooltip = POL_3_precent_more_industry_tt
 			}
 		}
 	}
@@ -6563,6 +6587,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_to_variable = { POL_num_of_starting_docs = 2 }
+			add_to_variable = {
+				var = POL_extra_factories_precent
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
+			}
 			#Add 2 Dockyards at Gdansk			
 		}
 	}
@@ -6630,6 +6660,12 @@ focus_tree = {
 			85 = {
 				add_building_construction = { type = bunker province = 362 level = 2 instant_build = yes }
 			}
+			add_to_variable = { POL_num_of_starting_docs = 2 }
+			add_to_variable = {
+				var = POL_extra_factories_precent
+				value = 0.03
+				tooltip = POL_3_precent_more_industry_tt
+			}
 			#Add 2 Dockyards at Gdansk			
 		}
 	}
@@ -6681,7 +6717,14 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}			
+			}
+			add_to_variable = { POL_num_of_starting_mils = 1 }
+			add_to_variable = { POL_num_of_starting_civs = 1 }
+			add_to_variable = {
+				var = POL_extra_factories_precent
+				value = 0.04
+				tooltip = POL_4_precent_more_industry_tt
+			}	
 		}
 	}
 
@@ -6734,7 +6777,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
+			add_to_variable = { POL_num_of_starting_civs = 1 }
+			add_to_variable = {
+				var = POL_extra_factories_precent
+				value = 0.02
+				tooltip = POL_2_precent_more_industry_tt
+			}
 			add_political_power = 50
 		}
 	}
