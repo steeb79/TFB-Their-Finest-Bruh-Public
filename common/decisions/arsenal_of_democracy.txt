@@ -290,7 +290,7 @@ arsenal_of_democracy_category = {
 
 		available = {
 			has_capitulated = yes
-			has_legitimacy > 50		
+			has_legitimacy > 80		
 		}
 
 		targets = { USA ENG }
@@ -315,10 +315,14 @@ arsenal_of_democracy_category = {
 
 		fire_only_once = no
 
-		days_remove = 30
+		days_remove = 60
 
 		complete_effect = {
 			set_country_flag = AOD_currently_undertaking_action_flag
+		}
+
+		modifier = {
+			legitimacy_daily = -0.05
 		}
 
 		remove_effect = {
@@ -330,7 +334,7 @@ arsenal_of_democracy_category = {
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 1
+				level = 2
 			}
 		}
 	}
