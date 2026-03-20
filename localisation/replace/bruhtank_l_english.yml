@@ -991,7 +991,7 @@
  sov_heavy_tank_3:0 "KV-1S"
  sov_heavy_tank_3_desc:0 "Allows additional armor for the KV-1 heavy tank chassis"
  sov_heavy_tank_4:0 "KV-85"
- sov_heavy_tank_4_desc:0 "Allows for Medium Turret 1"
+ sov_heavy_tank_4_desc:0 "Allows for Heavy Turret 1"
  sov_heavy_tank_6:0 "IS Model 43"
  sov_heavy_tank_turret:0 "IS 2 Upgrade"
  sov_heavy_tank_turret_desc:0 ""
