@@ -459,7 +459,7 @@ faction_goal_unlock_military = {
 		
 		multiply_temp_variable = {
 			var = total_divs
-			value = 1.20
+			value = 1.30
 		}
 		scope:faction = {
 			set_variable = { unlock_target = total_divs }
@@ -477,7 +477,7 @@ faction_goal_unlock_military = {
 					}
 					add_to_temp_variable = { unlock_compare = num_armies }
 					set_temp_variable = { unlock_military_techs_researched_compare_temp_target = unlock_compare }
-					multiply_temp_variable = { unlock_military_techs_researched_compare_temp_target = 1.20 }
+					multiply_temp_variable = { unlock_military_techs_researched_compare_temp_target = 1.30 }
 				}
 			}
 			if = {
