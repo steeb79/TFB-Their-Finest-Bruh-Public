@@ -1590,9 +1590,10 @@ guiTypes = {
 			spriteType = "GFX_terrain_mod_defense_strip"
 			position = { x=56 y=42 }
 			frame = 1
-		}
-	}
+		}		
 
+	}
+	
 	containerWindowType = {
 		name = "designer_adjuster_entry_with_modifier"	
 		size = { width = 50 height = 100 }

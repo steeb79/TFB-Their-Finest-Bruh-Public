@@ -181,11 +181,34 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			
 			modifier = {
 				has_war = yes
 				factor = 10
 			}
+			
+			modifier = {
+				factor = 2
+				date > 1938.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1939.1.1
+			}
+			
+			modifier = {
+				factor = 5
+				OR = {
+					tag = USA
+					tag = ENG
+					tag = JAP
+					tag = ITA
+				}
+			}
+			
 		}
+		
 
 		categories = {
 			naval_artillery
@@ -231,6 +254,26 @@ technologies = {
 			modifier = {
 				has_tech = improved_ship_hull_light
 				factor = 20
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+
+			modifier = {
+				factor = 1.5
+				date > 1940.1.1
+			}
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = USA
+					tag = ENG
+					tag = ITA
+					tag = JAP
+				}
 			}
 		}
 
@@ -300,6 +343,24 @@ technologies = {
 			modifier = {
 				has_war = yes
 				factor = 10
+			}
+			
+			modifier = {
+				factor = 2
+				date > 1942.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1943.1.1
+			}
+			
+			modifier = {
+				factor = 5
+				OR = {
+					tag = USA
+					tag = ENG
+				}
 			}
 		}
 
@@ -668,6 +729,24 @@ technologies = {
 				}
 				factor = 2
 			}
+			
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+
+			modifier = {
+				factor = 1.5
+				date > 1940.1.1
+			}
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = USA
+					tag = ENG
+				}
+			}
 		}
 
 		categories = {
@@ -763,6 +842,26 @@ technologies = {
 				is_major = yes
 				has_war = yes
 				factor = 5
+			}
+			
+			modifier = {
+				factor = 2
+				date > 1938.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1939.1.1
+			}
+			
+			modifier = {
+				factor = 5
+				OR = {
+					tag = USA
+					tag = ENG
+					tag = JAP
+					tag = ITA
+				}
 			}
 
 		}
@@ -1285,6 +1384,19 @@ technologies = {
 				tag = JAP
 				factor = 5
 			}
+			
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
 		}
 
 		categories = {
@@ -1329,6 +1441,15 @@ technologies = {
 			modifier = {
 				tag = JAP
 				factor = 5
+			}
+			modifier = {
+				factor = 1.5
+				date > 1941.1.1
+			}
+
+			modifier = {
+				factor = 1.5
+				date > 1942.1.1
 			}
 		}
 
@@ -1408,7 +1529,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 3
-
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
 			modifier = {
 				has_navy_size = { size < 10 }
 				factor = 0.1
@@ -1466,6 +1590,10 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+			modifier = {
 				is_historical_focus_on = yes
 				tag = JAP
 				factor = 0.25
@@ -1510,6 +1638,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+			}
 			modifier = {
 				is_historical_focus_on = yes
 				tag = JAP
@@ -1579,13 +1711,30 @@ technologies = {
 				has_navy_size = { size < 10 }
 				factor = 0.1
 			}
+			
 			modifier = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				tag = JAP
+			
+			modifier = {				
+				OR = {
+					tag = USA
+					tag = ENG
+					tag = JAP
+					tag = ITA
+				}
 				factor = 5
+			}
+			
+			modifier = {
+				factor = 2
+				date > 1938.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1939.1.1
 			}
 		}
 
@@ -1638,9 +1787,26 @@ technologies = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				tag = JAP
+			
+			modifier = {				
+				OR = {
+					tag = USA
+					tag = ENG
+					tag = JAP
+					tag = ITA
+				}
+				date > 1939.1.1
 				factor = 5
+			}
+			
+			modifier = {
+				factor = 2
+				date > 1940.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1941.1.1
 			}
 		}
 
@@ -1697,8 +1863,14 @@ technologies = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				tag = JAP
+			modifier = {				
+				OR = {
+					tag = USA
+					tag = ENG
+					tag = JAP
+					tag = ITA
+				}
+				date > 1941.1.1
 				factor = 5
 			}
 		}

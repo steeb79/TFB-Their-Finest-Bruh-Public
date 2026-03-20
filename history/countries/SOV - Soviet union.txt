@@ -1495,6 +1495,12 @@ if = {
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = empty
 		}
+		optional_assets = {
+			{
+				icon = "GFX_SOV_submarine_shchuka"
+				model = "SOV_submarine_entity"
+			}
+		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -1517,6 +1523,12 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = empty
+		}
+		optional_assets = {
+			{
+				icon = "GFX_SOV_submarine_shchuka"
+				model = "SOV_submarine_entity"
+			}
 		}
 	}
 	# Destroyers #
@@ -1811,6 +1823,12 @@ if = {
 				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_torpedo_slot = empty
 				mid_1_custom_slot = ship_depth_charge_1
+			}
+			optional_assets = {
+				{
+					icon = "GFX_PRC_destroyer_anshan"
+					model = "PRC_destroyer_entity"
+				}
 			}
 			obsolete = yes
 		}

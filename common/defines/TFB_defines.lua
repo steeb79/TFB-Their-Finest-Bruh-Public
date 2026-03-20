@@ -842,7 +842,7 @@ NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 5 -- When doctri
 NDefines.NFactions.FACTION_DOCTRINE_SHARING_UNLOCK_COST = 2 -- Cost of unlocking doctrine sharing for one folder
 NDefines.NFactions.FACTION_CONTRIBUTION_DEBT_LIMIT = 500 --How much you are allowed to be in debt from spending contribution
 NDefines.NFactions.FACTION_MANPOWER_RECIEVE_CONTRIBUTION_SCALAR = 0.2 -- a scalar for how much contribution it takes to get a singular recruitable population
-NDefines.NFactions.FACTION_SCIENTIST_CONTRIBUTION_VALUE = 1 --how much contribution one scientists gives to you if it is working for somebody else.
+NDefines.NFactions.FACTION_INFLUENCE_SCIENTIST_CONTRIBUTION_VALUE = 1 --how much contribution one scientists gives to you if it is working for somebody else.
 
 
 NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0				-- How much training contributes to doctrine mastery relative to combat/missions
