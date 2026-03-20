@@ -1505,15 +1505,18 @@
 				transfer_state = 970
 			}
 			105 = { 
-				#remove_core_of = YUG
+				remove_core_of = YUG
+				add_core_of = ALB
 				add_compliance = 30
 			}
 			802 = { 
-				#remove_core_of = YUG
+				remove_core_of = YUG
+				add_core_of = ALB
 				add_compliance = 30
 			}
 			970 = { 
-				#remove_core_of = YUG
+				remove_core_of = YUG
+				add_core_of = ALB
 				add_compliance = 30
 			}
 			103 = {
@@ -1544,10 +1547,7 @@
 			factor = 0
 		}
 		completion_reward = {
-			hidden_effect = {
-				YUG = { set_state_owner = 163 }
-			}
-			YUG = { set_state_controller = 163 }
+			YUG = { transfer_state = 163 }
 			163 = { add_core_of = YUG }
 			##todo added this to make up for 2 lost civs to Italy, just check if this is ok
         	random_state = {
@@ -1616,20 +1616,20 @@
 			factor = 0
 		}
 		completion_reward = {
-			hidden_effect = {
-				GER = { 
-					set_state_owner = 102
-				  	set_state_owner = 853
-				}
-			}
+
 			GER = { 
-				set_state_controller = 102
-				set_state_controller = 853
+				transfer_state = 102
 				102 = { add_core_of = GER }
-				853 = { add_core_of = GER }
 				102 = { remove_core_of = YUG }
+
+		    }
+
+			ITA = { 
+				transfer_state = 853
+				853 = { add_core_of = ITA }
 				853 = { remove_core_of = YUG }
 		    }
+
 			random_owned_controlled_state = {
 				prioritize = { 103 }
 				limit = {
@@ -1675,11 +1675,13 @@
 		}
 		completion_reward = {
 
-			HUN = { transfer_state = 45 }
+			HUN = { 	
+			transfer_state = 45 
+			transfer_state = 1059
+			}
 			45 = { 
 				remove_core_of = YUG
 			}
-			HUN = { transfer_state = 1059 }
 			1059 = { 
 				remove_core_of = YUG
 			}
@@ -1713,15 +1715,9 @@
 			factor = 0
 		}
 		completion_reward = {
-			hidden_effect = {
-				BUL = {
-					set_state_owner = 803
-					set_state_owner = 106
-				}
-			}
 			BUL = {
-				set_state_controller = 803
-				set_state_controller = 106
+				transfer_state = 803
+				transfer_state = 106
 			}
 			803 = { 
 				remove_core_of = YUG
