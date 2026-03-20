@@ -508,7 +508,7 @@ characters={
 			visible = {
 				OR = {
 					has_completed_focus = RAJ_sikh_religious_guarantees
-					#has_completed_focus = RAJ_the_punjab_accord
+					has_completed_focus = RAJ_the_punjab_accord
 				}
 			}
 		}
@@ -533,7 +533,7 @@ characters={
 			visible = {
 				OR = {
 					has_completed_focus = RAJ_sikh_religious_guarantees
-					#has_completed_focus = RAJ_the_punjab_accord
+					has_completed_focus = RAJ_the_punjab_accord
 				}
 			}
 		}
@@ -1881,13 +1881,13 @@ characters={
 			}
 			visible = {
 				OR = {
-					#has_completed_focus = RAJ_the_punjab_accord
+					has_completed_focus = RAJ_the_punjab_accord
 					has_completed_focus = RAJ_sikh_religious_guarantees
 				}
 			}
 			available = {
 				OR = {
-					#has_completed_focus = RAJ_the_punjab_accord
+					has_completed_focus = RAJ_the_punjab_accord
 					has_completed_focus = RAJ_sikh_religious_guarantees
 				}
 			}

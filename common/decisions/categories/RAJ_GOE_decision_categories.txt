@@ -52,7 +52,7 @@ RAJ_GOE_sikh_recruitment_cat = {
 	visible = {
 		OR = {
 			has_completed_focus = RAJ_punjab_autonomy
-			#has_completed_focus = RAJ_the_punjab_accord
+			has_completed_focus = RAJ_the_punjab_accord
 		}
 	}
 }
