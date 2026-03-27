@@ -1380,6 +1380,7 @@ create_equipment_variant = {
 		engine_type_slot = tank_gasoline_engine
 	}
 	icon = "gfx/interface/technologies/tanks/sov/sov_bt_tank_2.dds"
+	model = "SOV_light_armor_entity"
 }
 create_equipment_variant = {
 	name = "T-28"
