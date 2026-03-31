@@ -122,7 +122,7 @@ SOV_morozov_design_bureau_organization = {
 			limit = {
 				FROM = { tag = MEX }
 			}
-			FROM = { is_in_faction_with = SOV }
+			FROM = { has_completed_focus = MEX_focus_tank_workshops }
 		}
 		ELSE_IF = {
 			limit = {
