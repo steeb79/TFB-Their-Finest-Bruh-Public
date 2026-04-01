@@ -2184,6 +2184,9 @@ focus_tree = {
 				ideology = fascism
 				popularity = -0.05
 			}
+
+			set_rule = { can_join_factions = no }
+
 		}
 	}
 
