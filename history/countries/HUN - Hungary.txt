@@ -15,6 +15,20 @@ IF = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Earl Burrows"
+		GFX = "gfx\\leaders\\HUN\\Earl_Burrows.dds"
+		traits = { operative_seducer operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { HUN IRE }
+	}
+}
+
 # IF = {
 # 	limit = { has_dlc = "By Blood Alone" }
 # 		set_air_oob = "HUN_1936_air_bba"
