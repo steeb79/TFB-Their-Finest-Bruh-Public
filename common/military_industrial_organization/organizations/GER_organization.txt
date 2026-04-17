@@ -22,10 +22,10 @@ GER_porsche_organization = {
 	allowed = {	
 		OR = {
 			original_tag = GER 
-			AND = {
-				original_tag = MEX 
-				has_dlc = "Man the Guns"
-			}
+			# AND = {
+			# 	original_tag = MEX 
+			# 	has_dlc = "Man the Guns"
+			# }
 			AND = {
 				original_tag = IRQ 
 				has_dlc = "Graveyard of Empires"
