@@ -68,7 +68,7 @@ arsenal_of_democracy_category = {
 						has_completed_focus = USA_escort_effort 
 					}
 				}
-				#is_ai = no
+				is_ai = no
 				has_country_flag = AOD_toggle_wants_destroyers_flag
 			}
 		}
