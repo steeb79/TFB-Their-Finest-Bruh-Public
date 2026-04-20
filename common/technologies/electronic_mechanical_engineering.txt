@@ -1551,6 +1551,8 @@ technologies = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }
 		}
+
+		start_year = 1937
 		
 		path = {
 			leads_to_tech = improved_fire_control_system

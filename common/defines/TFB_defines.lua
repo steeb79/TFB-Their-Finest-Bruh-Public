@@ -108,7 +108,7 @@ NDefines.NResistance.GARRISON_EQUIPMENT_DELIVERY_SPEED = 10	-- Modifier for garr
 NDefines.NMarket.PURCHASE_CONTRACT_DELIVERY_TOTAL_DAYS = 15                   	-- Number of days between purchase contract deliveries
 NDefines.NMarket.IC_TO_CIC_FACTOR = 1.1                    					-- The factor for mapping IC cost to CIC cost. Should be a positive number.
 NDefines.NMarket.MAX_CIV_FACTORIES_PER_CONTRACT = 30							-- Max number of factories that can be assigned for paying single contract.
-NDefines.NMarket.PURCHASE_CONTRACT_SUBSIDY_BONUS_SPEED_FACTOR = 1.5				-- The factor of speed bonus from subsidies
+NDefines.NMarket.PURCHASE_CONTRACT_SUBSIDY_BONUS_SPEED_FACTOR = 4				-- The factor of speed bonus from subsidies
 
 NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5 	-- Max number of different strategic resources an equipment can be dependent on.
 NDefines.NProduction.EFFICIENCY_LOSS_PER_UNUSED_DAY = 1		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
@@ -438,7 +438,7 @@ NDefines.NAir.AIR_WING_XP_LOSS_REDUCTION_OVER_FRIENDLY_TERRITORY_FACTOR = 0.2 --
 
 
 NDefines.NAir.DISRUPTION_FACTOR = 4.0									-- multiplier on disruption damage to scale its effects on planes
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 500.0						-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 100.0						-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
 NDefines.NAir.DISRUPTION_SPEED_FACTOR = 1.5
 NDefines.NAir.DISRUPTION_AGILITY_FACTOR = 1.0
 NDefines.NAir.DISRUPTION_ATTACK_FACTOR = 1.0

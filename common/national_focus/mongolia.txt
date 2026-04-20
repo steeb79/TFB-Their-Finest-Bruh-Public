@@ -721,6 +721,7 @@ focus_tree = {
 			add_state_core = 757
 			add_state_core = 758
 			add_state_core = 322
+			add_state_core = 1042
 		}
 	}
 

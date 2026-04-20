@@ -73,7 +73,7 @@ IF = {
 	}
 }
 
-set_research_slots = 5
+set_research_slots = 4
 
 ### SETUP STABILITY AND WAR SUPPORT ###
 IF = {
@@ -467,6 +467,20 @@ recruit_character = HUN_leo_szilard
 recruit_character = HUN_john_von_neumann
 recruit_character = HUN_edward_teller
 recruit_character = HUN_laszlo_varga
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Earl Burrows"
+		GFX = "gfx\\leaders\\HUN\\Earl_Burrows.dds"
+		traits = { operative_seducer operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { HUN IRE }
+	}
+}
 
 
 # HIRES THE STARTING PM

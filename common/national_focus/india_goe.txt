@@ -17724,7 +17724,7 @@ focus_tree = {
         }
 
         allow_branch = {
-            always = no
+            #always = no
         }
 
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_TFV_AUTONOMY }
@@ -17788,8 +17788,8 @@ focus_tree = {
                 value = 1
             }
 
-            custom_effect_tooltip = generic_skip_one_line_tt
-            custom_effect_tooltip = RAJ_loyalist_branch_capstone_focuses_become_free_tt
+            # custom_effect_tooltip = generic_skip_one_line_tt
+            # custom_effect_tooltip = RAJ_loyalist_branch_capstone_focuses_become_free_tt
         }
     }
 

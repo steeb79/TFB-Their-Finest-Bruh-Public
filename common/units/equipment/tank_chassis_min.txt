@@ -54,7 +54,12 @@ equipments = {
 			suspension_type_slot = inherit
 			armor_type_slot = inherit
 			engine_type_slot = inherit
-			special_type_slot_1 = inherit
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
 			special_type_slot_2 = inherit
 		}
 		upgrades = {
@@ -92,7 +97,12 @@ equipments = {
 			suspension_type_slot = inherit
 			armor_type_slot = inherit
 			engine_type_slot = inherit
-			special_type_slot_1 = inherit
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
 			special_type_slot_2 = inherit
 		}
 		upgrades = {
@@ -111,6 +121,7 @@ equipments = {
 		abbreviation = "x13"
 		visual_level = 2
 		year = 1945
+		parent = fra_light_tank_chassis_ft
 		archetype = light_tank_chassis
 		parent = fra_light_tank_chassis_r35
 		priority = 2000
@@ -125,7 +136,12 @@ equipments = {
 			suspension_type_slot = inherit
 			armor_type_slot = inherit
 			engine_type_slot = inherit
-			special_type_slot_1 = inherit
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
 			special_type_slot_2 = inherit
 			special_type_slot_3 = {
 				required = no
