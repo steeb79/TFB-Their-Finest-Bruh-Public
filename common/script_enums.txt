@@ -330,11 +330,14 @@ script_enum_equipment_bonus_type = {
 	mechanized_equipment_1
 	mechanized_equipment_2
 	mechanized_equipment_3
+	mechanized_equipment_4
 	motorized_equipment
 	motorized_rocket_equipment
 	train_equipment
-	#motorized_equipment_0
+	motorized_equipment_0
 	motorized_equipment_1
+	motorized_equipment_2
+	motorized_equipment_3
 	small_plane_airframe
 	cv_small_plane_airframe
 	small_plane_airframe_0
@@ -840,6 +843,10 @@ script_enum_equipment_bonus_type = {
 	#horse_equipment_0
 	sf_equipment_0
 	radio_equipment_0
+	radio_equipment_1
+	radio_equipment_2
+	radio_equipment_3
+	
 	railway_gun_equipment_2
 	railway_gun_equipment_3
 	small_plane_airframe_late
@@ -1421,4 +1428,58 @@ script_enum_equipment_bonus_type = {
 
 
 	eng_medium_tank_chassis_a10
+
+
+
+    #Memez script enums
+
+	sov_light_tank_chassis_t37
+	light_tank_aa_chassissov_light_tank_chassis_t37
+	light_tank_artillery_chassissov_light_tank_chassis_t37
+	light_tank_destroyer_chassissov_light_tank_chassis_t37
+	light_tank_amphibious_chassissov_light_tank_chassis_t37
+	light_assault_gun_chassissov_light_tank_chassis_t37 
+
+	sov_medium_tank_chassis_t29
+    medium_tank_aa_chassissov_medium_tank_chassis_t29
+	medium_tank_artillery_chassissov_medium_tank_chassis_t29
+	medium_tank_destroyer_chassissov_medium_tank_chassis_t29 
+	medium_tank_amphibious_chassissov_medium_tank_chassis_t29
+	medium_assault_gun_chassissov_medium_tank_chassis_t29
+		
+	# sov_heavy_tank_chassis_kv1s
+	# heavy_tank_aa_chassissov_heavy_tank_chassis_kv1s
+	# heavy_tank_artillery_chassissov_heavy_tank_chassis_kv1s
+	# heavy_tank_destroyer_chassissov_heavy_tank_chassis_kv1s
+	# heavy_tank_amphibious_chassissov_heavy_tank_chassis_kv1s
+	# heavy_assault_gun_chassissov_heavy_tank_chassis_kv1s
+
+
+	sov_medium_tank_chassis_A44
+	medium_tank_aa_chassissov_medium_tank_chassis_A44
+	medium_tank_artillery_chassissov_medium_tank_chassis_A44
+	medium_tank_destroyer_chassissov_medium_tank_chassis_A44 
+	medium_tank_amphibious_chassissov_medium_tank_chassis_A44
+	medium_assault_gun_chassissov_medium_tank_chassis_A44
+
+
+
+	
+	
+
+
+	sov_heavy_tank_chassis_is4 
+	heavy_tank_aa_chassissov_heavy_tank_chassis_is4
+	heavy_tank_artillery_chassissov_heavy_tank_chassis_is4
+	heavy_tank_destroyer_chassissov_heavy_tank_chassis_is4
+	heavy_tank_amphibious_chassissov_heavy_tank_chassis_is4
+	heavy_assault_gun_chassissov_heavy_tank_chassis_is4
+
+	sov_heavy_tank_chassis_is6
+	heavy_tank_aa_chassissov_heavy_tank_chassis_is6
+	heavy_tank_artillery_chassissov_heavy_tank_chassis_is6
+	heavy_tank_destroyer_chassissov_heavy_tank_chassis_is6
+	heavy_tank_amphibious_chassissov_heavy_tank_chassis_is6
+	heavy_assault_gun_chassissov_heavy_tank_chassis_is6
+	
 }

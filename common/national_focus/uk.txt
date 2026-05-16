@@ -1796,6 +1796,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:ENG_supermarine_organization = {
+				complete_mio_trait = {
+					trait = ENG_mio_trait_supermarine_prod_cap
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = ENG_air_cooldown_flag
 			set_country_flag = ENG_airfocus
 			if = {
@@ -2250,6 +2257,15 @@ focus_tree = {
 			set_country_flag = ENG_air_cooldown_flag
 			set_country_flag = ENG_airfocus
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_timed_idea = {
+				idea = ENG_maximum_effort
+				days = 730
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = { has_country_flag = {
 					flag = ENG_airfocus2
@@ -2294,7 +2310,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_utilise_capabilities
-		icon = GFX_focus_generic_modernize_industry
+		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = ENG_new_modules }
 		x = 0
 		y = 1
@@ -4820,6 +4836,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:ENG_supermarine_organization = {
+				complete_mio_trait = {
+					trait = ENG_mio_trait_supermarine_prod_cap
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 		}
 	}
 
@@ -4867,7 +4892,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = -100
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_Malcom_MacDonald
 		}
@@ -5565,7 +5590,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 100
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_leslie_hore_belisha
 		}
@@ -5743,6 +5768,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
 			add_ideas = ENG_shadow_scheme_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:ENG_supermarine_organization = {
+				complete_mio_trait = {
+					trait = ENG_mio_trait_supermarine_prod_cap
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 	}
 	
@@ -6329,7 +6361,6 @@ focus_tree = {
 		completion_reward = {
 			SOV = { add_offsite_building = { type = arms_factory level = 15 } }
 			SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
-			SOV = { remove_ideas =  home_of_revolution  }
 		}
 	}
 	
@@ -6372,6 +6403,7 @@ focus_tree = {
 						tag = ENG
 						is_subject_of = ENG
 						tag = RAJ
+						NOT = { has_war_with = ENG }
 					}
 				}
 			}
@@ -6381,6 +6413,7 @@ focus_tree = {
 						tag = ENG
 						is_subject_of = ENG
 						tag = RAJ
+						NOT = { has_war_with = ENG }
 					}
 				}
 			}
@@ -6436,42 +6469,6 @@ focus_tree = {
 		completion_reward = {
 			SOV =  {country_event = { id = britain.501 hours = 2 } }
 			
-		}
-	}
-
-	focus = {
-		id = ENG_artic_convoys
-		icon = GFX_goal_generic_positive_trade_relations
-		available = {
-			OR = {
-				SOV = { controls_state = 213 }
-				SOV = { controls_state = 214 }
-			}
-		}
-
-		available_if_capitulated = yes
-
-		prerequisite = { focus = ENG_soviet_lend_lease }
-		x = 0
-		y = 1
-		relative_position_id = ENG_soviet_lend_lease
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			SOV = {
-				add_equipment_to_stockpile = {
-					type = convoy
-					amount = 200
-					producer = ENG
-				}
-				add_equipment_to_stockpile = {
-					type = convoy
-					amount = 200
-					producer = USA
-				}
-			}
 		}
 	}
 	

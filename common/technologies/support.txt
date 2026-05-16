@@ -1215,13 +1215,13 @@ technologies = {
 	tech_maintenance_company2 = {
 
 		maintenance_company = {
-			reliability_factor = 0.10
+			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
 		}
 
 		armored_maintenance = {
-			reliability_factor = 0.075
-			recovery = 0.03
+			reliability_factor = 0.05
+			recovery = 0.05
 			equipment_capture_factor = 0.05
 		}
 
@@ -1270,7 +1270,7 @@ technologies = {
 	tech_maintenance_company3 = {
 
 		maintenance_company = {
-			reliability_factor = 0.10
+			reliability_factor = 0.05
 
 			battalion_mult = {
 				category = category_all_armor
@@ -1281,8 +1281,8 @@ technologies = {
 		}
 
 		armored_maintenance = {
-			reliability_factor = 0.075
-			recovery = 0.03
+			reliability_factor = 0.05
+			recovery = 0.05
 
 			battalion_mult = {
 				category = category_all_armor
@@ -1332,12 +1332,12 @@ technologies = {
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
-			reliability_factor = 0.10
+			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
 		}
 
 		armored_maintenance = {
-			reliability_factor = 0.075
+			reliability_factor = 0.05
 			recovery = 0.03
 			equipment_capture_factor = 0.05
 		}
@@ -2700,5 +2700,35 @@ technologies = {
 			}
 		}
 	}
+
+	light_amphibious_tank_recon_support_tech = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+		enable_equipment_modules = {
+		   tank_light_turret_2_amphib_USSR
+		}  
+		enable_subunits = {
+		    light_amphibious_tank_recon
+		}	
+	}
+
+	camel_logistics_support_tech = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			logistics_company_camel
+		}
+	}	
 
 }

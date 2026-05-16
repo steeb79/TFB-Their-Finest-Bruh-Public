@@ -101,12 +101,12 @@ bookmarks = {
 			ideology = communism
 			ideas = {
 				trotskyite_plot_nsb
-				home_of_revolution
+				#home_of_revolution
 				SOV_order_270_idea
 			}
 			focuses = {
-				SOV_the_centre
-				SOV_red_army
+				#SOV_pol_general1
+				SOV_mil1
 				SOV_war_mobilisation
 			}	
 		}
@@ -569,6 +569,39 @@ bookmarks = {
 				PHI_appoint_macarthur
 				PHI_national_defense_act
 				PHI_treaty_of_manila
+			}
+		}
+		CZE={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Peace For Our Time" }
+			new_content = yes
+			ideas = {
+				CZE_a_divided_nation_fake_ns
+				CZE_sudeten_german_quandary
+				CZE_industrialists_veto
+			}
+			focuses = {
+				CZE_the_second_fortification_program
+				CZE_appeal_to_the_castle
+				CZE_coalition_building
+			}
+		}
+
+		CZE={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Peace For Our Time" } }
+			ideas = {
+				CZE_skoda_works
+				CZE_divided_nation
+			}
+			focuses = {
+				CZE_an_entente_of_our_own
+				CZE_industrial_legacy
+				CZE_czechoslovak_legion
 			}
 		}
 		effect = {
